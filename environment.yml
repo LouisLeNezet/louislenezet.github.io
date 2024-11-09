@@ -1,0 +1,9 @@
+name: env_website
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - rb-jekyll
+  - rb-kramdown
+  - rb-jekyll-scholar
+  - rb-github-pages
