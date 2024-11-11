@@ -1,14 +1,6 @@
 name: Spellcheck
 on:
-  push:
-    branches:
-    - "main"
-    - "dev"
-    paths:
-    - '**.js'
-    - '**.txt'
-    - '**.html'
-    - '**.md'
+  push
 jobs:
   spelling:
     runs-on: ubuntu-latest
