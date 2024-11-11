@@ -1,0 +1,7 @@
+<div class="contact">
+  <ul class="contact__list list-reset">
+    {% for media in site.data.social_media %}
+      <a href="{{ media.url }}"><i class="{{ media.icon }}"><p> </p></i></a>
+    {% endfor %}
+  </ul>
+</div>
