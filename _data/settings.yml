@@ -1,0 +1,25 @@
+#-------------------------------
+# General Site Settings
+title: ""
+logo: "" # You can add own logo.
+description: The personal website of Louis Le Nézet
+
+
+#-------------------------------
+# Author Settings
+author:
+  name: Louis Le Nézet
+  image: assets/img/personal/LouisLeNezetSq.png
+  say-hello: <strong>Louis Le Nézet</strong>
+  bio: >-
+    I'm a PhD student in genomic bioinformatics at the University of Rennes, France.
+    I'm passionate about FAIR and Open Science, and I'm a strong advocate for the use of
+    open-source software in research.
+
+
+#-------------------------------
+# Contact links
+github: https://github.com/louislenezet/
+orcid: https://www.linkedin.com/in/louis-le-nezet/
+researchgate: https://www.researchgate.net/profile/Louis-Le-Nezet
+linkedin: https://www.linkedin.com/in/louis-le-nezet/

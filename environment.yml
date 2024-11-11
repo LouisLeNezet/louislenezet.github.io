@@ -3,7 +3,10 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - gcc
   - rb-jekyll
   - rb-kramdown
   - rb-jekyll-scholar
   - rb-github-pages
+  - rb-jekyll-feed
+  - rb-jekyll-paginate
