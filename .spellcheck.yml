@@ -2,7 +2,7 @@ matrix:
   - name: Markdown
     sources:
       - '**/*.md'
-    dictionary: en_UK
+    dictionary: en_US
     exclude:
       - node_modules
       - vendor
