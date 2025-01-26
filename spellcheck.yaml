@@ -1,0 +1,10 @@
+matrix:
+  - name: Markdown
+    sources:
+      - '**/*.md'
+    dictionary: en_UK
+    exclude:
+      - node_modules
+      - vendor
+      - dist
+      - build
