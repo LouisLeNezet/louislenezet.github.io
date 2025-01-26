@@ -1,10 +1,16 @@
 matrix:
-  - name: Markdown
-    sources:
-      - '**/*.md'
-    dictionary: en_US
-    exclude:
-      - node_modules
-      - vendor
-      - dist
-      - build
+- name: Markdown
+  aspell:
+    lang: en
+  dictionary:
+    encoding: utf-8
+  pipeline:
+  - pyspelling.filters.markdown:
+  - pyspelling.filters.html:
+      comments: false
+      ignores:
+      - code
+      - pre
+  sources:
+  - '**/*.md'
+  default_encoding: utf-8
