@@ -19,6 +19,11 @@ Monlong
 io
 Zolan
 conda
+img
+png
+genomic
+haplotype
+SNP
 louislenezet
 genotypes
 Pedixplorer
