@@ -63,16 +63,14 @@
 }
 
 .post-image {
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: $light-gray;
+    height: 150px;
   &:after {
     content: "";
     display: table;
     width: 100%;
-    min-height: 300px;
-    padding-top: 50%;
   }
 }
 
@@ -142,12 +140,13 @@
 
     .post__nav__image {
       display: block;
-      margin-bottom: 40px;
+      margin-bottom: 10px;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       background-repeat: no-repeat;
-      background-color: $light-gray;
+      background-color: $white;
       transition: .35s ease-in-out;
+      height: 150px;
       &:hover {
         opacity: 0.9;
       }
@@ -155,7 +154,6 @@
         content: "";
         display: table;
         width: 100%;
-        padding-bottom: 65%;
       }
     }
 
