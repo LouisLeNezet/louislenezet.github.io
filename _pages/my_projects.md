@@ -42,7 +42,7 @@ nextflow run nf-core/phaseimpute \
 
 ## BioShinyModules
 
-I've participated to the St-Judes BioHackathon in 2023 and worked on an R package proposing
+I've participated to the St-Judes BioHackathon in 2023 and worked on a R package proposing
 [shiny modules](https://shiny.posit.co/r/articles/improve/modules/)
 often used in biology shiny applications (e.g. import / export data, common graphics, ...). The aim is to
 have a common layout for all the modules to make them easily usable and operable.

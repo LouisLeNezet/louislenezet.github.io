@@ -23,13 +23,13 @@ The **nf-core/phaseimpute** pipeline simplifies and automates several critical s
 
 ![phaseimpute_metromap](assets/img/phaseimpute/MetroMap_animated.svg)
 
-1) Reference Panel Preprocessing
+1) Reference panel pre-processing
 The first step involves processing your reference panel, ensuring that it’s compatible with the selected imputation tools. This includes operations like normalization, phasing, and extraction of relevant sites.
-2) Imputation of Target Data
+2) Imputation of target data
 Next, the pipeline uses the selected software (Glimpse, Stitch, or Quilt) to impute your target BAM or VCF files, filling in missing genetic data based on the reference panel.
-3) Simulation of Target Files
+3) Simulation of target files
 You can also simulate target files with varying sequencing depths, enabling you to test how different depths impact imputation accuracy.
-4) Imputation Accuracy Evaluation
+4) Imputation accuracy evaluation
 The pipeline allows you to compare the imputed data against a truth set. This truth set can be either computed using `bcftools mpileup` or provided as a VCF file of known genotypes.
 
 ## Key Features
@@ -44,6 +44,6 @@ The pipeline allows you to compare the imputed data against a truth set. This tr
 This pipeline was built using the powerful [nf-core v3.0.2](https://nf-co.re/) framework and [Nextflow v24.10.1](https://www.nextflow.io/docs/latest/index.html).
 We leveraged the excellent [nf-schema](https://nextflow-io.github.io/nf-schema/latest/) plugin for parameter validation, ensuring that the pipeline is both flexible and robust. Additionally, all modules, subworkflows, and workflows were rigorously tested using [nf-test](https://www.nf-test.com/).
 
-## More informations
+## More information
 
 Feel free to explore the first release of the pipeline [here](https://nf-co.re/phaseimpute/1.0.0/), and stay tuned for future updates as we continue to enhance its capabilities!

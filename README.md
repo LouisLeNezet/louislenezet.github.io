@@ -1,8 +1,8 @@
 # My github page
 
-This repository host the scripts and files necessary to build my [personnal website](https://louislenezet.github.io).
+This repository host the scripts and files necessary to build my [personal website](https://louislenezet.github.io).
 It is based on the [jekyll](https://jekyllrb.com/) framework.
-I took inspiration from different personnal github page that I found really nice:
+I took inspiration from different personal github page that I found really nice:
 
 - [Maxime U Garcia](https://maxulysse.github.io/)
 - [Jean Monlong](https://jmonlong.github.io/)
@@ -11,7 +11,7 @@ The organisation is as follow :
 
 - `_pages` : Markdown files for the different pages of the website
 - `_posts` : Markdown for different news happening for my projects
-- `_site`  : HTML builded static website
+- `_site`  : HTML built static website
 
 The layout is based on the [Zolan](https://github.com/artemsheludko/zolan) - Modern & Minimal Theme for Jekyll
 
@@ -25,7 +25,7 @@ mamba env create -f environment.yml
 mamba activate env_website
 ```
 
-You might need to update the different softwares
+You might need to update the different software
 
 ```bash
 gem update --system
