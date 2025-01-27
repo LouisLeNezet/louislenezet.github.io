@@ -22,19 +22,15 @@ While the initial version of the pipeline is focused on **low-pass sequencing da
 
 The **nf-core/phaseimpute** pipeline simplifies and automates several critical steps involved in genetic imputation. Here’s an overview of how the pipeline operates:
 
-![phaseimpute_metromap](./assets/img/phaseimpute/MetroMap_animated.svg)
+![phaseimpute_metromap]({{ site.baseurl }}/assets/img/phaseimpute/MetroMap_animated.svg)
 
-1) Reference panel pre-processing
-The first step involves processing your reference panel, ensuring that it’s compatible with the selected imputation tools. This includes operations like normalization, phasing, and extraction of relevant sites.
+1) Reference panel pre-processing. The first step involves processing your reference panel, ensuring that it’s compatible with the selected imputation tools. This includes operations like normalization, phasing, and extraction of relevant sites.
 
-2) Imputation of target data
-Next, the pipeline uses the selected software (Glimpse, Stitch, or Quilt) to impute your target BAM or VCF files, filling in missing genetic data based on the reference panel.
+2) Imputation of target data. Next, the pipeline uses the selected software (Glimpse, Stitch, or Quilt) to impute your target BAM or VCF files, filling in missing genetic data based on the reference panel.
 
-3) Simulation of target files
-You can also simulate target files with varying sequencing depths, enabling you to test how different depths impact imputation accuracy.
+3) Simulation of target files. You can also simulate target files with varying sequencing depths, enabling you to test how different depths impact imputation accuracy.
 
-4) Imputation accuracy evaluation
-The pipeline allows you to compare the imputed data against a truth set. This truth set can be either computed using `bcftools mpileup` or provided as a VCF file of known genotypes.
+4) Imputation accuracy evaluation. The pipeline allows you to compare the imputed data against a truth set. This truth set can be either computed using `bcftools mpileup` or provided as a VCF file of known genotypes.
 
 ## Key Features
 

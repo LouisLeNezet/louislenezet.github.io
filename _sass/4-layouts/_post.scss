@@ -71,7 +71,7 @@
     content: "";
     display: table;
     width: 100%;
-    min-height: 300px;
+    min-height: 150px;
     padding-top: 50%;
   }
 }
@@ -154,7 +154,8 @@
       &:after {
         content: "";
         display: table;
-        width: 100%;
+        width: 50%;
+        max-height: 75px;
         padding-bottom: 65%;
       }
     }
