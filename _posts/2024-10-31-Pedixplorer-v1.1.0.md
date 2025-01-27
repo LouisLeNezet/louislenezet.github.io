@@ -3,6 +3,7 @@ layout: post
 title: "New version of Pedixplorer available"
 date: 2024-10-31
 image: assets/img/pedixplorer/icon_Pedixplorer.png
+image_post: assets/img/pedixplorer/icon_Pedixplorer.png
 description: The version 1.2.0 of the Pedixplorer R package is available on Bioconductor v3.20
 tags:
   - bioinformatics
