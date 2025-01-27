@@ -66,13 +66,11 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: $light-gray;
+    height: 150px;
   &:after {
     content: "";
     display: table;
     width: 100%;
-    min-height: 150px;
-    padding-top: 50%;
   }
 }
 
@@ -142,21 +140,20 @@
 
     .post__nav__image {
       display: block;
-      margin-bottom: 40px;
+      margin-bottom: 10px;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       background-repeat: no-repeat;
-      background-color: $light-gray;
+      background-color: $white;
       transition: .35s ease-in-out;
+      height: 150px;
       &:hover {
         opacity: 0.9;
       }
       &:after {
         content: "";
         display: table;
-        width: 50%;
-        max-height: 75px;
-        padding-bottom: 65%;
+        width: 100%;
       }
     }
 
