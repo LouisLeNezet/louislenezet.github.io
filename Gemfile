@@ -1,8 +1,16 @@
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins
+gem 'github-pages'
+gem 'jekyll', '~> 3.9.0'
+gem 'liquid'
+gem 'kramdown'
+gem 'terminal-table'
 gem "liquid-c"
 gem "minima", "~> 2.0"
+gem 'csv'
+gem 'logger'
+gem 'bigdecimal'
+gem 'webrick'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do

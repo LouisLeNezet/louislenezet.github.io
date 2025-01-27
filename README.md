@@ -25,10 +25,11 @@ mamba env create -f environment.yml
 mamba activate env_website
 ```
 
-You might need to update the differen softwares
+You might need to update the different softwares
 
 ```bash
 gem update --system
+bundle update --bundler
 bundle update
 ```
 

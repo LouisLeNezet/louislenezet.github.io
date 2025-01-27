@@ -4,9 +4,6 @@ channels:
   - defaults
 dependencies:
   - gcc
-  - rb-jekyll
-  - rb-kramdown
-  - rb-jekyll-scholar
-  - rb-github-pages
-  - rb-jekyll-feed
-  - rb-jekyll-paginate
+  - gxx_linux-64
+  - conda-forge::ruby >=3.4
+  - conda-forge::libffi
