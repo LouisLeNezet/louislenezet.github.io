@@ -18,7 +18,7 @@ available in CRAN.
 However, it wasn't anymore maintained, and I needed new features for my PhD project.
 
 This new version allows to automatically create big and complex `Pedigree()` S4 object,
-filter them and also compute additionnal information. From this object you can draw with
+filter them and also compute additional information. From this object you can draw with
 lots of option the pedigree layout. It is possible with this version to draw them as
 `ggplot2` object allowing to add interactivity with the [plotly](https://plotly.com/) library.
 

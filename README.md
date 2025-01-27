@@ -41,3 +41,13 @@ Use the following command:
 bundle exec jekyll build
 bundle exec jekyll serve
 ```
+
+## Spelling check
+
+The spelling is done through a github workflow and additional words
+can be added in `.wordlist.txt`.
+This file can be sorted and cleaned with the following command:
+
+```bash
+sort -u -o .wordlist.txt .wordlist.txt
+```

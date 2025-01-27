@@ -12,7 +12,7 @@ tags:
 
 # First release of [nf-core/phaseimpute](https://nf-co.re/phaseimpute/1.0.0/)
 
-I’m excited to announce the first official release of the [nf-core/phaseimpute](https://nf-co.re/phaseimpute/1.0.0/) pipeline, developed in collaboration with [Anabella Trigilla](https://github.com/atrigila) and the amazing nf-core community. This pipeline is designed to streamline the **genetic imputation** process, specifically focusing on the preparation of haplotype reference panels for imputing genomic data of target individuals.
+I’m excited to announce the first official release of the [nf-core/phaseimpute](https://nf-co.re/phaseimpute/1.0.0/) pipeline, developed in collaboration with [Anabella Trigila](https://github.com/atrigila) and the amazing nf-core community. This pipeline is designed to streamline the **genetic imputation** process, specifically focusing on the preparation of haplotype reference panels for imputing genomic data of target individuals.
 
 While the initial version of the pipeline is focused on **low-pass sequencing data**, it supports state-of-the-art imputation tools such as [Glimpse](https://odelaneau.github.io/GLIMPSE/), [Stitch](https://github.com/rwdavies/STITCH) and [Quilt](https://github.com/rwdavies/QUILT). In the future, we plan to expand support for SNP chip array data with tools like impute5, Beagle5, and Minimac4.
 
