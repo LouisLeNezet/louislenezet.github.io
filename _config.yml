@@ -23,6 +23,11 @@ defaults:
     values:
       permalink: /:basename:output_ext
 
+  - scope:
+      path: '_posts'
+    values:
+      permalink: /:year/:month/:day/:title/
+
 include:
   - "_pages"
 
@@ -36,6 +41,7 @@ exclude:
   - Gemfile.lock
   - node_modules
   - README.md
+  - environment.yml
 
 sass:
   sass_dir: _sass

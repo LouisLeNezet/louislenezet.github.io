@@ -6,7 +6,7 @@ permalink: /projects/
 
 # PhD projects
 
-During my thesis I've developped different tools that are available publically.
+During my thesis I've developed different tools that are available publicly.
 
 ## [Pedixplorer](https://www.bioconductor.org/packages/release/bioc/html/Pedixplorer.html) Bioconductor package
 

@@ -1,15 +1,13 @@
 ---
 layout: post
-title:  "First release of nf-core/phaseimpute available"
-date:   2025-01-26 21:44:00 +0100
+title: "First release of nf-core/phaseimpute available"
+date: 2025-01-26
 image: assets/img/phaseimpute/nf-core-phaseimpute_hexagonal_logo.png
 description: The release 1.0.0 of nf-core/phaseimpute is now available
 tags:
   - bioinformatics
   - imputation
-  - genetics
   - nf-core
-  - nextflow
 ---
 
 # First release of [nf-core/phaseimpute](https://nf-co.re/phaseimpute/1.0.0/)

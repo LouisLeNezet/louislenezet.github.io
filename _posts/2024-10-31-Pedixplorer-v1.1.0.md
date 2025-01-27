@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "New version of Pedixplorer available"
-date:   2024-10-31 19:51:13 +0100
+title: "New version of Pedixplorer available"
+date: 2024-10-31
 image: assets/img/pedixplorer/icon_Pedixplorer.png
 description: The version 1.2.0 of the Pedixplorer R package is available on Bioconductor v3.20
 tags:
