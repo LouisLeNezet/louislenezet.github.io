@@ -1,0 +1,9 @@
+name: env_website
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - gcc
+  - gxx_linux-64
+  - conda-forge::ruby >=3.4
+  - conda-forge::libffi
