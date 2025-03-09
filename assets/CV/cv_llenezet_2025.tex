@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
+\documentclass[11pt,a4paper]{moderncv}
 
 % ModernCV themes
 \moderncvstyle{banking} % Style options: banking, casual, classic, oldstyle
@@ -6,7 +6,9 @@
 
 % Adjust margins
 \usepackage[scale=0.8]{geometry}
-\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{microtype} % Improve typography
+\usepackage{cite} % Optional for citation management
 
 % Personal data
 \name{Le Nézet}{Louis}
@@ -24,53 +26,72 @@
 
 % Section: Qualifications
 \section{Qualifications}
-\cvitem{2021-2025}{\textbf{PhD} in Genomic Bioinformatics, University of Rennes, France}
-\cvitem{2016-2018}{\textbf{Master's Degree} in Animal and Human Behaviour, University of Rennes, France}
-\cvitem{2015-2016}{\textbf{Bachelor's in Biology}, University-Brittany-South / Vannes, France}
+\begin{tabularx}{\textwidth}{p{0.1\textwidth} X}
+    2025 & \textbf{PhD} in Genomic Bioinformatics, University of Rennes, France \\
+    2018 & \textbf{Master's Degree} in Animal and Human Behaviour, University of Rennes, France \\
+    2016 & \textbf{Bachelor's in Biology}, University-Brittany-South / Vannes, France \\
+\end{tabularx}
 
 % Section: Positions
 \section{Positions}
-\cvitem{2021-2025}{\textbf{PhD Student}, UMR 6290 IGDR, France: "Genetics basics of hip dysplasia in dogs as a model for the developmental dysplasia of the hip in humans"}
-\cvitem{2020-2021}{\textbf{Research technician}, UMR 6290 IGDR, France: "Genetics of hips dysplasia in guide dogs"}
-\cvitem{2018}{\textbf{Ethology internship}, UMR 6552 EthoS, France: “Social stress and comfort food in ponies \textit{Equus caballus} and in collared mangabeys \textit{Cercocebus torquatus}”}
-\cvitem{2017}{\textbf{Ethology internship}, Eötvös Loránd University, Department of Ethology, Budapest: “Screening for sensory decline in ageing pet dogs (\textit{Canis familiaris})”}
+\begin{tabularx}{\textwidth}{p{0.1\textwidth} X}
+    2025 & \textbf{PhD Student}, UMR 6290 IGDR, France: \textit{Genetics basics of hip dysplasia in dogs as a model for developmental dysplasia of the hip in humans} \\
+    2021 & \textbf{Research technician}, UMR 6290 IGDR, France: \textit{Genetics of hips dysplasia in guide dogs} \\
+    2018 & \textbf{Ethology internship}, UMR 6552 EthoS, France: \textit{Social stress and comfort food in ponies \textbf{Equus caballus} and in collared mangabeys \textbf{Cercocebus torquatus}} \\
+    2017 & \textbf{Ethology internship}, Eötvös Loránd University, Department of Ethology, Budapest: \textit{Screening for sensory decline in ageing pet dogs} \\    
+\end{tabularx}
 
 % Section: Fundings
 \section{Fundings}
-\cvitem{2025}{4th year end of PhD: “Fondation pour la Recherche Médicale”}
-\cvitem{2021-2025}{PhD Research Grant, Visio Foundation}
-\cvitem{2017}{Regional youth international scholarships grant: Brittany region}
+\begin{tabularx}{\textwidth}{p{0.1\textwidth} X}
+    2025 & 4th year end of PhD: "Fondation pour la Recherche Médicale" \\
+    2024 & EuroBioc Oxford, travel grant \\
+    2021 & PhD Research Grant, Visio Foundation \\
+    2017 & Regional youth international scholarships grant: Brittany region \\
+\end{tabularx}
 
 % Section: External Standing
 \section{External Standing}
-\cvitem{Reviewer}{Human heredity, ISSN: 1423-0062}
-\cvitem{2025}{Nextflow Ambassador}
-\cvitem{2024-2025}{nf-core hackathon organizer}
-\cvitem{Member}{Organization member for the 1st and 2nd Life Science PhD Symposium}
-\cvitem{Member}{Organization member for the 48th SFECA congress}
+\begin{tabularx}{\textwidth}{p{0.1\textwidth} X}
+    2025 & Nextflow Ambassador \& nf-core hackathon organizer \\
+    2024 & nf-core hackathon organizer \\
+    & Reviewer for Human heredity, ISSN: 1423-0062 \\
+    2023 & Organization member for the 1\textsuperscript{st} and 2\textsuperscript{nd} Life Science PhD Symposium \\
+    2021 & Organization member for the 48\textsuperscript{th} SFECA congress \\
+\end{tabularx}
 
 % Section: Publications
 \section{Publications}
-\subsection{Codes}
-\begin{longtable}{p{4cm}p{12cm}}
-Pedixplorer (v1.1.5) & Bioconductor pedigree R package \\
-Phaseimpute (v1.0.0) & nf-core pipeline for phasing and imputation \\
-\end{longtable}
+    \subsection{Codes}
+    \begin{tabularx}{\textwidth}{p{0.3\textwidth} X}
+        \href{https://www.bioconductor.org/packages/release/bioc/html/Pedixplorer.html}{Pedixplorer (v1.1.5)} & \textbf{Bioconductor} pedigree R package \\
+        \href{https://nf-co.re/phaseimpute}{Phaseimpute (v1.0.0)} & \textbf{nf-core} pipeline for phasing and imputation \\
+    \end{tabularx}
 
-\subsection{Articles}
-\cvitem{2025}{\textbf{Lenezet L.}, et al. "Genetic imputation in canine hip dysplasia: a One Health approach." \textit{Journal of Comparative Genetics} 2025.}
+    \subsection{Articles}
+    \bibliography{LouisLeNezet}
 
 
 % Section: Past Presentations
 \section{Past Presentations}
-\subsection{Posters}
-\cvitem{Poster 1}{"Introducing nf-core/phaseimpute from idea to release", Phd Symposium 2024 - Rennes and Nextflow Summit 2024 - Barcelona}
-\cvitem{Poster 2}{"Imputation dans l'analyse génétique de la dysplasie de la hanche : une approche One Health chez le chien et l’Homme", Assise de Génétiques 2024 - Paris and Atelier 281 Inserm 2024 - Bordeaux}
-\cvitem{Poster 3}{"From Dog to Human: Searching the genetic bases of hip dysplasia", IGDR Day 2023 - Rennes and ED SVS Scientific day 2024 - St-Malo}
+    \subsection{Posters}
+        \begin{itemize}
+            \item \textit{Introducing nf-core/phaseimpute from idea to release} \newline
+            Phd Symposium 2024 - Rennes and Nextflow Summit 2024 - Barcelona \\
+            \item \textit{Imputation dans l'analyse génétique de la dysplasie de la hanche: une approche One Health chez le chien et l’Homme} \newline
+            Assise de Génétiques 2024 - Paris and Atelier 281 Inserm 2024 - Bordeaux \\
+            \item \textit{From Dog to Human: Searching the genetic bases of hip dysplasia} \newline
+            IGDR Day 2023 - Rennes and ED SVS Scientific day 2024 - St-Malo \\
+        \end{itemize}
 
-\subsection{Oral}
-\cvitem{Talk 1}{"nf-core pipeline for genetic imputation: PhaseImpute", Nextflow summit 2023 - Barcelona, PhD Symposium 2023 - Rennes, JOBIM 2024 - Toulouse}
-\cvitem{Talk 2}{"Pedixplorer: A modern R BioConductor package for efficient kinship analysis to draw and request complex pedigrees", EuroBioc 2024 – Oxford}
-\cvitem{Talk 3}{"La dysplasie de la Hanche du Chien à l’Homme", MT180 Rennes and Brittany 2023}
+    \subsection{Oral}
+        \begin{itemize}
+            \item \textit{Pedixplorer: A modern R BioConductor package for efficient kinship analysis to draw and request complex pedigrees} \newline
+            EuroBioc 2024 – Oxford \\
+            \item \textit{nf-core pipeline for genetic imputation: PhaseImpute} \newline
+            Nextflow summit 2023 - Barcelona, PhD Symposium 2023 - Rennes, JOBIM 2024 - Toulouse \\
+            \item \textit{La dysplasie de la Hanche du Chien à l’Homme} \newline
+            MT180 Rennes and Brittany 2023 \\
+        \end{itemize}
 
 \end{document}
