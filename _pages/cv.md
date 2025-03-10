@@ -1,6 +1,6 @@
 ---
 layout: page
-title: My Curiculum Vitae
+title: My Curriculum Vitae
 permalink: /cv/
 ---
 

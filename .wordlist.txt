@@ -11,6 +11,7 @@ Minimac
 Monlong
 Nextflow
 Pedixplorer
+PDFs
 SNP
 Trigila
 VCF
@@ -20,6 +21,7 @@ conda
 contigs
 coxme
 csv
+cv
 generalisable
 genomic
 genotypes
