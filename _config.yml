@@ -30,6 +30,7 @@ defaults:
 
 include:
   - "_pages"
+  - "assets/"
 
 # Tags
 tag_page_dir:         tag
