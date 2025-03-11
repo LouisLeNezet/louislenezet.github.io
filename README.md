@@ -64,5 +64,7 @@ sudo apt install texlive-full  # Ubuntu/Debian
 The CV is written in latex and can be compiled with the following command:
 
 ```bash
-pdflatex cv.tex
+pdflatex cv_llenezet_2025
+biber cv_llenezet_2025
+pdflatex cv_llenezet_2025
 ```

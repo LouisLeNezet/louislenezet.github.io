@@ -1,0 +1,16 @@
+---
+layout: default
+title: Posters
+---
+
+<h1>Posters Collection</h1>
+
+<ul>
+    {% for poster in site.data.posters %}
+        <li>
+        <h3>{{ poster.title }}</h3>
+        <p><a href="{{ poster.pdf }}" target="_blank">Download PDF</a></p>
+        <p><a href="{{ poster.cff }}" target="_blank">View Citation (CFF)</a></p>
+        </li>
+    {% endfor %}
+</ul>

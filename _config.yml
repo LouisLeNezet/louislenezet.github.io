@@ -27,6 +27,10 @@ defaults:
       path: '_posts'
     values:
       permalink: /:year/:month/:day/:title/
+  - scope:
+      path: '_posters'
+    values:
+      permalink: /posters/:title/
 
 include:
   - "_pages"
