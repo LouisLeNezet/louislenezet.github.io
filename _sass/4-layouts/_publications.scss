@@ -1,0 +1,33 @@
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.poster-thumbnail img {
+    width: 200px; /* Adjust thumbnail size */
+    height: auto;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+.poster-thumbnail img:hover {
+    transform: scale(1.05);
+}

@@ -2,40 +2,52 @@
 layout: default
 title: Publications
 ---
-
-<h1>Publications</h1>
-
 <!-- Articles Section -->
-<h2>Articles</h2>
-<ul>
-    <p>Comming soon !</p>
-    {% for article in site.data.articles %}
-        <li>
-        <h3>{{ article.title }}</h3>
-        <p>{{ article.description }}</p>
-        <p><a href="{{ article.url }}" target="_blank">Read Article</a></p>
-        </li>
-    {% endfor %}
-</ul>
+<div class="container">
+    <h2>Articles</h2>
+    <div class="article-box">
+        <div class="col col-10 push-2 col-11 push-t-1 col-m-12 push-m-0">
+            <ul>
+                <p>Comming soon !</p>
+                {% for article in site.data.articles %}
+                    <li>
+                    <h3>{{ article.title }}</h3>
+                    <p>{{ article.description }}</p>
+                    <p><a href="{{ article.url }}" target="_blank">Read Article</a></p>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
 
 <!-- Posters Section -->
-<h2>Posters</h2>
-<ul>
-    {% for poster in site.data.posters %}
-        <li>
-        {% assign cff_file = poster.cff | split: "/" %}
-        {% assign cff_path = site.static_files | where: "path", "assets/posters/" | where: "path", cff_file[2] | first %}
-        {% if cff_path %}
-            {% assign cff_data = cff_path.content | parse_yaml %}
-            <h3>{{ cff_data.title }}</h3> <!-- This will show the title from the CFF -->
-        {% else %}
-            <h3>{{ poster.title }}</h3> <!-- Fallback if CFF data is missing -->
-        {% endif %}
-        <iframe class="full-width-pdf" src="{{ poster.pdf }}" height="400px">
-            This browser does not support PDFs. Please download the PDF to view it:
-            <a href="{{ poster.pdf }}">Download PDF</a>.
-        </iframe>
-        <p><a href="{{ poster.cff }}" target="_blank">View Citation (CFF)</a></p>
-        </li>
-    {% endfor %}
-</ul>
+
+<div class="container">
+    <h2>Posters</h2>
+    <div class="poster-box">
+        <div class="col col-10 push-2 col-11 push-t-1 col-m-12 push-m-0">
+            <ul>
+                {% for poster in site.data.posters %}
+                    <li>
+                        {% assign cff_file = poster.cff | split: "/" %}
+                        {% assign cff_path = site.static_files | where: "path", "assets/posters/" | where: "path", cff_file[2] | first %}
+                        {% if cff_path %}
+                            {% assign cff_data = cff_path.content | parse_yaml %}
+                            <h3>{{ cff_data.title }}</h3> <!-- Title from CFF -->
+                        {% else %}
+                            <h3>{{ poster.title }}</h3> <!-- Fallback Title -->
+                        {% endif %}
+                        
+                        <!-- Thumbnail with Click Event -->
+                        <a href="{{ poster.pdf }}" target="_blank" class="poster-thumbnail">
+                            <img src="{{ poster.thumbnail }}" alt="Poster Thumbnail">
+                        </a>
+
+                        <p><a href="{{ poster.cff }}" target="_blank">View Citation (CFF)</a></p>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
