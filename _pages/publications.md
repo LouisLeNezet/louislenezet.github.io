@@ -7,36 +7,3 @@ permalink: /publications/
 My publications will soon be available here !
 
 ## Posters
-
-### Introducing nf-core/phaseimpute from idea to release
-[![Download Poster](https://img.shields.io/badge/View_Poster-PDF-red)](./assets/posters/Poster_2024-10-24_NextflowSummit.pdf)
-
-📜 **Citation:**  
-```yaml
----
-cff-version: 1.2.0
-message: "If you take inspiration from this poster, please cite as follows."
-title: Introducing nf-core/phaseimpute from idea to release
-abstract: |
-  Genome imputation is a statistical technique that enhances the resolution of genotyping
-  arrays and low-pass sequencing (<1x) by filling missing data with information from
-  reference panels. While existing pipelines primarily focus on the imputation step and in the
-  human species, crucial steps such as panel preparation, phasing, and imputation
-  assessment are often overlooked.
-  To address this gap, we introduce nf-core/phaseimpute, a comprehensive pipeline to
-  perform panel preparation, genomic data simulation, imputation, and tool assessment.
-authors:
-  - family-names: Le Nézet
-    given-names: Louis
-    orcid: "https://orcid.org/0009-0000-0202-2703"
-  - family-names: Trigila
-    given-names: Anabella
-  - family-names: Quignon
-    given-names: Pascale
-  - family-names: André
-    given-names: Catherine
-version: 0.1.0
-date-released: "2024-10-24"
-repository-code: "https://github.com/louislenezet/louislenezet.github.io"
-license: "CC-BY-4.0"
----

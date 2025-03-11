@@ -1,9 +1,11 @@
 Anabella
+André
 BAM
 Bioconductor
 BioHackathon
 bioinformatics
 BioShinyModules
+cff
 conda
 contigs
 coxme
@@ -13,8 +15,10 @@ cv
 generalisable
 genomic
 genotypes
+genotyping
 github
 haplotype
+https
 IGDR
 img
 io
@@ -26,6 +30,9 @@ Minimac
 Monlong
 Nextflow
 nf
+Nézet
+orcid
+Pascale
 PDFs
 Pedixplorer
 pedixplorer
@@ -34,6 +41,7 @@ phaseimpute
 plotly
 png
 pre
+Quignon
 SNP
 subworkflow
 subworkflows

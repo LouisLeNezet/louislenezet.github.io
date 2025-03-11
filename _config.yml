@@ -16,6 +16,12 @@ plugins:
   - jekyll-sitemap
   - jekyll/tagging
 
+header:
+  - title: "Home"
+    url: "/"
+  - title: "Posters"
+    url: "/posters/"
+
 # Pages Path
 defaults:
   - scope:
@@ -27,10 +33,6 @@ defaults:
       path: '_posts'
     values:
       permalink: /:year/:month/:day/:title/
-  - scope:
-      path: '_posters'
-    values:
-      permalink: /posters/:title/
 
 include:
   - "_pages"
