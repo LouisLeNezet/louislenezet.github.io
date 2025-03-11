@@ -1,7 +1,7 @@
 ---
-layout: page
-title: Publications
-permalink: /publications/
+layout: posters
+title: Posters
+permalink: /posters/
 ---
 
-My publications will soon be available here !
+This page lists all the posters.
