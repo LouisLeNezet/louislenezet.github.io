@@ -8,8 +8,17 @@ title: Posters
 <ul>
     {% for poster in site.data.posters %}
         <li>
-        <h3>{{ poster.title }}</h3>
-        <p><a href="{{ poster.pdf }}" target="_blank">Download PDF</a></p>
+        {% assign cff_file = poster.cff | split: "/" %}
+        {% assign cff_path = site.static_files | where: "path", "assets/posters/" | where: "path", cff_file[2] | first %}
+        {% if cff_path %}
+            {% assign cff_data = cff_path.content | parse_yaml %}
+            <h3>{{ cff_data.title }}</h3> <!-- This will show the title from the CFF -->
+        {% else %}
+            <h3>{{ poster.title }}</h3> <!-- Fallback if CFF data is missing -->
+        {% endif %}
+        <iframe class="full-width-pdf" src="{{ poster.pdf }}" height="800px">
+            This browser does not support PDFs. Please download the PDF to view it: <a href="{{ poster.pdf }}">Download PDF</a>.
+        </iframe>
         <p><a href="{{ poster.cff }}" target="_blank">View Citation (CFF)</a></p>
         </li>
     {% endfor %}
