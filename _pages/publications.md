@@ -5,5 +5,3 @@ permalink: /publications/
 ---
 
 My publications will soon be available here !
-
-## Posters
