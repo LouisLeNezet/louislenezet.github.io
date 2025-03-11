@@ -1,10 +1,25 @@
 ---
 layout: default
-title: Posters
+title: Publications
 ---
 
-<h1>Posters Collection</h1>
+<h1>Publications</h1>
 
+<!-- Articles Section -->
+<h2>Articles</h2>
+<ul>
+    <p>Comming soon !</p>
+    {% for article in site.data.articles %}
+        <li>
+        <h3>{{ article.title }}</h3>
+        <p>{{ article.description }}</p>
+        <p><a href="{{ article.url }}" target="_blank">Read Article</a></p>
+        </li>
+    {% endfor %}
+</ul>
+
+<!-- Posters Section -->
+<h2>Posters</h2>
 <ul>
     {% for poster in site.data.posters %}
         <li>
@@ -16,8 +31,9 @@ title: Posters
         {% else %}
             <h3>{{ poster.title }}</h3> <!-- Fallback if CFF data is missing -->
         {% endif %}
-        <iframe class="full-width-pdf" src="{{ poster.pdf }}" height="800px">
-            This browser does not support PDFs. Please download the PDF to view it: <a href="{{ poster.pdf }}">Download PDF</a>.
+        <iframe class="full-width-pdf" src="{{ poster.pdf }}" height="400px">
+            This browser does not support PDFs. Please download the PDF to view it:
+            <a href="{{ poster.pdf }}">Download PDF</a>.
         </iframe>
         <p><a href="{{ poster.cff }}" target="_blank">View Citation (CFF)</a></p>
         </li>

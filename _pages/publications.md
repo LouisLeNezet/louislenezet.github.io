@@ -1,7 +1,6 @@
 ---
-layout: posters
-title: Posters
-permalink: /posters/
+layout: publications
+title: Publications
+permalink: /publications/
 ---
 
-This page lists all the posters.
