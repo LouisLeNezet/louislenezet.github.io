@@ -20,6 +20,18 @@ authors:
   - family-names: André
     given-names: Catherine
 version: 0.1.0
-date-released: "2024-10-24"
+date: "2024-10-24"
+congress: "Nextflow Summit"
+location: "Barcelona, Spain"
 repository-code: "https://github.com/louislenezet/louislenezet.github.io"
 license: "CC-BY-4.0"
+language: "EN"
+keywords:
+  - nextflow
+  - nf-core
+  - phaseimpute
+  - imputation
+  - phasing
+  - panel
+  - pipeline
+  - bioinformatics

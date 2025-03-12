@@ -8,3 +8,5 @@ dependencies:
   - conda-forge::ruby >=3.4
   - conda-forge::libffi
   - conda-forge::pdf2image
+  - conda-forge::cffconvert
+  - conda-forge::pyyaml

@@ -30,14 +30,11 @@ title: Publications
             <ul>
                 {% for poster in site.data.posters %}
                     <li>
-                        {% assign cff_file = poster.cff | split: "/" %}
-                        {% assign cff_path = site.static_files | where: "path", "assets/posters/" | where: "path", cff_file[2] | first %}
-                        {% if cff_path %}
-                            {% assign cff_data = cff_path.content | parse_yaml %}
-                            <h3>{{ cff_data.title }}</h3> <!-- Title from CFF -->
-                        {% else %}
-                            <h3>{{ poster.title }}</h3> <!-- Fallback Title -->
-                        {% endif %}
+                        <h3>{{ poster.title }}</h3>
+                        <!-- Date, Congress, and Location -->
+                        <p><strong>Date:</strong> {{ poster.date }}</p>
+                        <p><strong>Congress:</strong> {{ poster.congress }}</p>
+                        <p><strong>Location:</strong> {{ poster.location }}</p>
                         
                         <!-- Thumbnail with Click Event -->
                         <a href="{{ poster.pdf }}" target="_blank" class="poster-thumbnail">

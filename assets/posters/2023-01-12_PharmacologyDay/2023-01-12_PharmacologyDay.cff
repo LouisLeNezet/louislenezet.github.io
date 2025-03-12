@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you take inspiration from this poster, please cite as follows."
+title: "From Dog to Human: Searching the genetic bases of hip dysplasia"
+abstract: |
+  Canine Hip Dysplasia (CHD) is an abnormality in the development of the hip joint in dogs and is homologous to the Developmental Dysplasia of the Hip (DDH) in humans. 
+  This disease is caused by excessive laxity of the joint, resulting in poor coaptation of the bones. It then leads to a deformation of the joint profiles and the development of 
+  osteoarthritis in later age.
+  In dogs, this condition entails high costs for the organisations that train working dogs. The “Association les Chiens Guides d'Aveugles de l'Ouest” and the Visio Foundation have therefore asked our team, with the collaboration of Prof. Jean-Pierre Genevois1, to carry out a research project on the genetic causes of CHD. 
+  CHD  is  a  complex,  multifactorial  disease  with  several  genes  and  environmental  factors  (e.g.,  nutrition,  exercise)  involved  in  its  development.  Multiple  loci  are  currently 
+  under investigation, but none have yet been confirmed as involved in the canine or human disease. 
+  Dogs are a useful orthopaedic model because they share similar environments, diseases, diagnosis and treatments with humans. Moreover, family dogs are a non exper-
+  imental and natural model easier to study than humans: they have shorter generation time, their information and samples are simpler to obtain and the diseases preva-
+  lence tends to be higher due to population structure.
+authors:
+  - family-names: Le Nézet
+    given-names: Louis
+    orcid: "https://orcid.org/0009-0000-0202-2703"
+  - family-names: Quignon
+    given-names: Pascale
+  - family-names: André
+    given-names: Catherine
+version: 0.1.0
+date: "2023-01-12"
+congress: "Pharmacology Day"
+location: "Rennes, France"
+license: "CC-BY-4.0"
+language: "FR"
+repository-code: "https://github.com/louislenezet/louislenezet.github.io"
+keywords:
+  - CHD
+  - Canine Hip Dysplasia
+  - Dog
+  - Genetics
+  - One Health
+  - Orthopaedics

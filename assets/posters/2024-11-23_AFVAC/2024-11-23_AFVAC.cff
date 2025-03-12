@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you take inspiration from this poster, please cite as follows."
+title: "Recherche des bases génétiques de la Dysplasie Coxo-Fémorale (DCF) : du chien à l'Homme"
+abstract: |
+  La  Dysplasie  Coxo-Fémorale  (DCF) est une anomalie du développement de l'articulation de la hanche, homologue aux Maladies  Luxantes  de  la  Hanche  (MLH)  chez 
+  l'Homme. Ces affections se caractérisent par un défaut de coaptation de la tête fémorale dans l'acétabulum et sont à plus long terme compliquées d'arthrose. Face à un 
+  taux élevé de réformes de chiens guides dû à la DCF ces 20 dernières années, l'Association les Chiens Guides d'Aveugles de l'Ouest (ACGAO) et la fondation Visio se 
+  sont engagées dans une collaboration avec l'équipe “Génétique du chien” (UMR 6290) pour mener un projet de recherche sur les causes génétiques de cette affection.
+  La DCF est une maladie complexe et multifactorielle impliquant des facteurs génétiques et environnementaux (i.e. nutrition, exercice), qui touche de nombreuses races 
+  de chien. Des analyses génétiques faites par différentes équipes, dont la nôtre, ont identifié des régions chromosomiques associées à la DCF dans certaines races, bien 
+  que aucune variation génétique spécifique n'ait encore été validée. 
+  Les races canines  constituent des  modèles  spontanés  de ces anomalies du développement pour l'Homme. Elles sont particulièrement intéressantes pour l'étude des 
+  maladies  multigéniques  complexes  du  fait  de  l'homogénéité  génétique  intra-race  et  de  l'hétérogénéité  génétique  inter-race.  La  DCF  canine  est  ainsi  un  modèle 
+  précieux pour l'étude des MLH humaines.
+authors:
+  - family-names: Le Nézet
+    given-names: Louis
+    orcid: "https://orcid.org/0009-0000-0202-2703"
+  - family-names: Machou
+    given-names: Lauranne
+  - family-names: Genevois
+    given-names: Jean-Pierre
+  - family-names: Quignon
+    given-names: Pascale
+  - family-names: André
+    given-names: Catherine
+version: 0.1.0
+date: "2024-11-23"
+congress: "Association Française des Vétérinaires pour Animaux de Compagnie (AFVAC)"
+location: "Lyon, France"
+license: "CC-BY-4.0"
+language: "FR"
+repository-code: "https://github.com/louislenezet/louislenezet.github.io"
+keywords:
+  - DCF
+  - Dysplasie Coxo-Fémorale
+  - Chien
+  - Génétique
+  - One Health
+  - Orthopédie
