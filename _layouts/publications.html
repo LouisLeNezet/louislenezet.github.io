@@ -32,12 +32,12 @@ title: Publications
                 {% if mod_value == 0 %}
                     <!-- Open a new row every 3 items -->
                     <div class="row">
-                    <p> mod_value </p>
                 {% endif %}
                 
                 <div class="col col-4 col-m-12">
                     <div class="poster-item">
                         <h3>{{ poster.title }}</h3>
+                        <p> {{ mod_value }} {{ forloop.index0 }}</p>
                         <p><strong>Date:</strong> {{ poster.date }}</p>
                         <p><strong>Congress:</strong> {{ poster.congress }}</p>
                         <p><strong>Location:</strong> {{ poster.location }}</p>
@@ -52,7 +52,6 @@ title: Publications
                 </div>
 
                 {% if mod_value == 2 or forloop.last %}
-                    <p> mod_value </p>
                     </div> <!-- Close row after 3 items -->
                 {% endif %}
             {% endfor %}
