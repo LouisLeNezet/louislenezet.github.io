@@ -47,17 +47,18 @@ a:hover {
     border-radius: 5px;
     text-align: center;
     display: flex;
+    flex-direction: column; /* Ensures vertical stacking */
     align-items: center;
 }
 
 .poster-item h3 {
-    min-height: 4.5em; /* Forces 3 lines (adjust as needed) */
-    line-height: 1.5em; /* Ensures consistent spacing */
-    overflow: hidden; /* Prevents overflow */
+    min-height: 4.5em; /* Forces 3 lines */
+    line-height: 1.5em; /* Each line is 1.5em */
+    overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* Limits to exactly 3 lines */
-    line-clamp: 3;
+    -webkit-line-clamp: 3; /* Limits to 3 lines */
     -webkit-box-orient: vertical;
-    text-overflow: ellipsis; /* Adds "..." if text overflows */
+    text-overflow: ellipsis;
     white-space: normal;
+    width: 100%; /* Ensures the title takes full width */
 }
