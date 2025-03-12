@@ -47,3 +47,14 @@ a:hover {
     border-radius: 5px;
     text-align: center;
 }
+
+.poster-item h3 {
+    height: 3em; /* Adjust for 2 or 3 lines depending on font-size */
+    line-height: 1.5em; /* Ensures consistent spacing */
+    overflow: hidden; /* Prevents overflow */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limits to 2 lines */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis; /* Adds "..." if text overflows */
+    white-space: normal;
+}
