@@ -49,19 +49,28 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Aligns text to the top */
+    justify-content: flex-start; /* Align content to the top */
 }
 
 .poster-item h3 {
-    width: 100%; /* Ensures full width */
-    
-    height: 4.5em; /* Forces exactly 3 lines */
-    line-height: 1.5em; /* Each line = 1.5em */
+    width: 100%;
     
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3; /* Limits to exactly 3 lines */
+    -webkit-line-clamp: 3; /* Force exactly 3 lines */
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
+    
+    /* Ensures all h3 take the same space */
+    min-height: 4.5em; /* 3 lines of text */
+    line-height: 1.5em; 
+    position: relative;
+}
+
+.poster-item h3::after {
+    content: "Placeholder Placeholder Placeholder"; /* Filler text */
+    visibility: hidden;
+    display: block;
+    line-height: 1.5em;
 }
