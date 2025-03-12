@@ -28,8 +28,11 @@ title: Publications
         <div class="col col-10 push-2 col-11 push-t-1 col-m-12 push-m-0">
             {% assign sorted_posters = site.data.posters | sort: 'date' | reverse %}
             {% for poster in sorted_posters %}
-                {% if forloop.index0 % 3 == 0 %}
-                    <div class="row"> <!-- Open row only every 3 items -->
+                {% assign mod_value = forloop.index0 | modulo: 3 %}
+                {% if mod_value == 0 %}
+                    <!-- Open a new row every 3 items -->
+                    <div class="row">
+                    <p> mod_value </p>
                 {% endif %}
                 
                 <div class="col col-4 col-m-12">
@@ -48,7 +51,8 @@ title: Publications
                     </div>
                 </div>
 
-                {% if forloop.index0 % 3 == 2 or forloop.last %}
+                {% if mod_value == 2 or forloop.last %}
+                    <p> mod_value </p>
                     </div> <!-- Close row after 3 items -->
                 {% endif %}
             {% endfor %}
