@@ -31,3 +31,21 @@ a:hover {
 .poster-thumbnail img:hover {
     transform: scale(1.05);
 }
+
+.poster-box .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.poster-box .col {
+    padding: 15px;
+}
+
+.poster-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    text-align: center;
+}

@@ -27,9 +27,10 @@ title: Publications
     <h2>Posters</h2>
     <div class="poster-box">
         <div class="col col-10 push-2 col-11 push-t-1 col-m-12 push-m-0">
-            <ul>
-                {% for poster in site.data.posters %}
-                    <li>
+            {% assign sorted_posters = site.data.posters | sort: 'date' | reverse %}
+            {% for poster in sorted_posters %}
+                <div class="col col-4 col-m-12">
+                    <div class="poster-item">
                         <h3>{{ poster.title }}</h3>
                         <!-- Date, Congress, and Location -->
                         <p><strong>Date:</strong> {{ poster.date }}</p>
@@ -37,14 +38,18 @@ title: Publications
                         <p><strong>Location:</strong> {{ poster.location }}</p>
                         
                         <!-- Thumbnail with Click Event -->
-                        <a href="{{ poster.pdf }}" target="_blank" class="poster-thumbnail">
-                            <img src="{{ poster.thumbnail }}" alt="Poster Thumbnail">
+                        <a href="{{ site.baseurl }}/{{ poster.pdf }}" target="_blank" class="poster-thumbnail">
+                            <img src="{{ site.baseurl }}/{{ poster.thumbnail }}" alt="Poster Thumbnail" style="width: 100%;">
                         </a>
 
-                        <p><a href="{{ poster.cff }}" target="_blank">View Citation (CFF)</a></p>
-                    </li>
-                {% endfor %}
-            </ul>
+                        <p><a href="{{ site.baseurl }}/{{ poster.cff }}" target="_blank">View Citation (CFF)</a></p>
+                    </div>
+                </div>
+                {% if forloop.index0 % 3 == 2 %}
+                    </div><div class="row">
+                {% endif %}
+            {% endfor %}
+        </div>
         </div>
     </div>
 </div>
