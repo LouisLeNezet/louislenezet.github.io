@@ -46,19 +46,18 @@ a:hover {
     background-color: #f9f9f9;
     border-radius: 5px;
     text-align: center;
-    display: flex;
-    flex-direction: column; /* Ensures vertical stacking */
-    align-items: center;
 }
 
 .poster-item h3 {
-    min-height: 4.5em; /* Forces 3 lines */
-    line-height: 1.5em; /* Each line is 1.5em */
-    overflow: hidden;
+    width: 100%; /* Ensures full width */
+    
+    height: 4.5em; /* Forces exactly 3 lines */
+    line-height: 1.5em; /* Each line = 1.5em */
+    
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* Limits to 3 lines */
     -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* Limits to exactly 3 lines */
+    overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
-    width: 100%; /* Ensures the title takes full width */
 }
