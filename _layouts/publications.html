@@ -36,6 +36,7 @@ title: Publications
                     <div class="poster-item">
                         <h3>{{ poster.title }}</h3>
                         <!-- Date, Congress, and Location -->
+                        <p>{{ forloop.index0 }}</p>
                         <p><strong>Date:</strong> {{ poster.date }}</p>
                         <p><strong>Congress:</strong> {{ poster.congress }}</p>
                         <p><strong>Location:</strong> {{ poster.location }}</p>
@@ -48,7 +49,7 @@ title: Publications
                         <p><a href="{{ site.baseurl }}/{{ poster.cff }}" target="_blank">View Citation (CFF)</a></p>
                     </div>
                 </div>
-                {% if forloop.index0 % 3 == 2 %}
+                {% if forloop.index0 % 3 == 2 or forloop.last %}
                     </div>
                 {% endif %}
             {% endfor %}
