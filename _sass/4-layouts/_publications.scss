@@ -30,8 +30,9 @@
     justify-content: flex-start; /* Align content to the top */
 }
 
-.poster-item h3 {
-    color: aqua;
+.poster-item h3,
+.poster-item h3 a {
+    color: aqua !important;
     width: 100%;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -43,11 +44,4 @@
     min-height: 4.5em; /* 3 lines of text */
     line-height: 1.5em; 
     position: relative;
-}
-
-.poster-item h3::after {
-    content: "Placeholder Placeholder Placeholder"; /* Filler text */
-    visibility: hidden;
-    display: block;
-    line-height: 1.5em;
 }
