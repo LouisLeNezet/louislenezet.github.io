@@ -22,7 +22,6 @@ title: Publications
 </div>
 
 <!-- Posters Section -->
-
 <div class="container">
     <h2>Posters</h2>
     <div class="poster-box">
@@ -30,18 +29,17 @@ title: Publications
             {% assign sorted_posters = site.data.posters | sort: 'date' | reverse %}
             {% for poster in sorted_posters %}
                 {% if forloop.index0 % 3 == 0 %}
-                    <div class="row">
+                    <div class="row"> <!-- Open row only every 3 items -->
                 {% endif %}
+                
                 <div class="col col-4 col-m-12">
                     <div class="poster-item">
                         <h3>{{ poster.title }}</h3>
-                        <!-- Date, Congress, and Location -->
-                        <p>{{ forloop.index0 }}</p>
                         <p><strong>Date:</strong> {{ poster.date }}</p>
                         <p><strong>Congress:</strong> {{ poster.congress }}</p>
                         <p><strong>Location:</strong> {{ poster.location }}</p>
-                        
-                        <!-- Thumbnail with Click Event -->
+
+                        <!-- Thumbnail -->
                         <a href="{{ site.baseurl }}/{{ poster.pdf }}" target="_blank" class="poster-thumbnail">
                             <img src="{{ site.baseurl }}/{{ poster.thumbnail }}" alt="Poster Thumbnail" style="width: 100%;">
                         </a>
@@ -49,8 +47,9 @@ title: Publications
                         <p><a href="{{ site.baseurl }}/{{ poster.cff }}" target="_blank">View Citation (CFF)</a></p>
                     </div>
                 </div>
+
                 {% if forloop.index0 % 3 == 2 or forloop.last %}
-                    </div>
+                    </div> <!-- Close row after 3 items -->
                 {% endif %}
             {% endfor %}
         </div>
