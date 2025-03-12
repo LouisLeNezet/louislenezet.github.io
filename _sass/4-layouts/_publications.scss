@@ -1,25 +1,3 @@
-ul {
-    list-style-type: none;
-}
-
-li {
-    margin-bottom: 20px;
-}
-
-h3 {
-    font-size: 1.5em;
-    color: #333;
-}
-
-a {
-    color: #0077cc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 .poster-thumbnail img {
     width: 200px; /* Adjust thumbnail size */
     height: auto;
@@ -53,15 +31,14 @@ a:hover {
 }
 
 .poster-item h3 {
+    color: aqua;
     width: 100%;
-    
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3; /* Force exactly 3 lines */
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
-    
     /* Ensures all h3 take the same space */
     min-height: 4.5em; /* 3 lines of text */
     line-height: 1.5em; 
