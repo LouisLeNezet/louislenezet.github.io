@@ -10,3 +10,4 @@ dependencies:
   - conda-forge::pdf2image
   - conda-forge::cffconvert
   - conda-forge::pyyaml
+  - conda-forge::pybtex

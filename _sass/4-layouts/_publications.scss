@@ -11,7 +11,7 @@
 }
 
 .poster-box .row {
-    margin: 0 -15px;
+    margin: 0 0;
 }
 
 .poster-box .col {
@@ -28,6 +28,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start; /* Align content to the top */
+    margin-bottom: 20px;
 }
 
 .poster-item h3,
