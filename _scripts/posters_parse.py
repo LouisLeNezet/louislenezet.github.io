@@ -14,7 +14,7 @@ with open(yml, "w") as outfile:
 all_path = [os.path.join(dp, f) for dp, dn, fn in os.walk(os.path.expanduser(pdf_dir)) for f in fn]
 for poster_file in all_path:
     if poster_file.endswith(".pdf"):
-        images = convert_from_path(poster_file, first_page=1, dpi=150)  # Convert first page to image
+        images = convert_from_path(poster_file, first_page=1, dpi=30)  # Convert first page to image
         thumbnail_path = poster_file.replace(".pdf", ".jpg")
         images[0].save(thumbnail_path, "JPEG")  # Save thumbnail
         print(f"Thumbnail saved: {thumbnail_path}")
