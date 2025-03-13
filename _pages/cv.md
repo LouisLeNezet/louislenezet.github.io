@@ -1,12 +1,5 @@
 ---
 layout: page
-title: My Curriculum Vitae
+title: CV
 permalink: /cv/
 ---
-
-{% for i in (0..1) %}
-    {% assign cv_i = "/assets/CV/cv_llenezet_2025{{ i }}" %}
-    <a href="{{ cv_i }}.pdf" target="_blank" class="cv-thumbnail">
-        <img src="{{ cv_i }}.jpg" alt="CV Thumbnail" style="width: 100%;">
-    </a>
-{% endfor %}
