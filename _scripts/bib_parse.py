@@ -26,7 +26,8 @@ for key, entry in bib_data.entries.items():
         "authors": authors,
         "doi": entry.fields.get("doi", ""),
         "url": entry.fields.get("url", ""),
-        "citation": f"{authors} ({year}). {title}. DOI: {entry.fields.get('doi', 'N/A')}."
+        "file": entry.fields.get("file", ""),
+        "citation": f"{authors} ({year}). {title}."
     }
     
     formatted_entries.append(formatted_entry)
