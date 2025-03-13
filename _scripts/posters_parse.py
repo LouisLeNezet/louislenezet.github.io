@@ -40,3 +40,13 @@ for poster_file in all_path:
                     outfile.write("\n")
             except yaml.YAMLError as exc:
                 print(exc)
+
+pdf_dir = "assets/CV/"
+all_path = [os.path.join(dp, f) for dp, dn, fn in os.walk(os.path.expanduser(pdf_dir)) for f in fn]
+for poster_file in all_path:
+    if poster_file.endswith(".pdf"):
+        images = convert_from_path(poster_file, dpi=150)
+        for i, image in enumerate(images):
+            thumbnail_path = poster_file.replace(".pdf", f"_{i}.jpg")
+            image.save(thumbnail_path, "JPEG")
+            print(f"Thumbnail saved: {thumbnail_path}")
