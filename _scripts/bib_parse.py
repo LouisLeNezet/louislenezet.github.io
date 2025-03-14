@@ -1,8 +1,6 @@
-import os
 import yaml
 from pybtex.database import parse_file
 from pybtex.style.formatting.plain import Style
-from pybtex.database.output.bibtex import Writer
 
 bib_path = "assets/articles/LouisLeNezet.bib"
 yml_path = "_data/articles.yml"
@@ -17,9 +15,17 @@ style = Style()
 for key, entry in bib_data.entries.items():
     title = entry.fields.get("title", "Unknown Title")
     year = entry.fields.get("year", "Unknown Year")
-    authors = " & ".join(person.get_part_as_text("last") for person in entry.persons.get("author", []))
+    authors = [' '.join(map(str, [
+        person.get_part_as_text("first"),
+        person.get_part_as_text("middle"),
+        person.get_part_as_text("last")
+    ])) for person in entry.persons.get("author", [])]
+    authors = ", ".join(map(str, authors))
     url = entry.fields.get("url", "")
     doi = entry.fields.get("doi", "")
+    journal = entry.fields.get("journal", "")
+    address = entry.fields.get("address", "")
+    journal = journal if journal != "" else address
     if doi != "":
         url = f"https://doi.org/{doi}"
     # Construct citation
@@ -28,7 +34,7 @@ for key, entry in bib_data.entries.items():
         "year": year,
         "authors": authors,
         "file": entry.fields.get("file", ""),
-        "citation": f"{authors} ({year}). {title}.",
+        "citation": f"{authors} ({year}). <i>{title}<\\i>. In: {journal}.",
         "url": url
     }
     
