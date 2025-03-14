@@ -51,3 +51,20 @@ This file can be sorted and cleaned with the following command:
 ```bash
 sort -u -o .wordlist.txt .wordlist.txt
 ```
+
+
+## Latex CV compilation
+
+You need to have a latex distribution installed on your computer.
+
+```bash
+sudo apt install texlive-full  # Ubuntu/Debian
+```
+
+The CV is written in latex and can be compiled with the following command:
+
+```bash
+pdflatex cv_llenezet_2025
+biber cv_llenezet_2025
+pdflatex cv_llenezet_2025
+```

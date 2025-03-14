@@ -1,0 +1,46 @@
+---
+layout: page
+title: Publications
+---
+<!-- Articles Section -->
+<h2>Articles</h2>
+{% assign sorted_articles = site.data.articles | sort: 'year' | reverse %}
+{% for article in sorted_articles %}
+    <li>
+        <h3>{{ article.title }}</h3>
+        <p>{{ article.citation }}</p>
+        {% if article.url != "" %}
+            <p><a href="{{ article.url }}" target="_blank">Read Article</a> or <a href="{{ article.file }}" target="_blank">Download</a></p>
+        {% else %}
+            <p><a href="{{ article.file }}" target="_blank">Download</a></p>
+        {% endif %}
+    </li>
+{% endfor %}
+
+<!-- Posters Section -->
+<h2>Posters</h2>
+{% assign sorted_posters = site.data.posters | sort: 'date' | reverse %}
+{% for poster in sorted_posters %}
+    {% assign mod_value = forloop.index0 | modulo: 2 %}
+    {% if mod_value == 0 %}
+        <div class="row">
+    {% endif %}
+    
+    <div class="col col-6 col-m-12">
+        <div class="poster-item">
+            <h3>{{ poster.title }}</h3>
+            <p><strong>{{ poster.congress }}</strong> {{ poster.date }} - {{ poster.location }}</p>
+
+            <!-- Thumbnail -->
+            <a href="{{ site.baseurl }}/{{ poster.pdf }}" target="_blank" class="poster-thumbnail">
+                <img src="{{ site.baseurl }}/{{ poster.thumbnail }}" alt="Poster Thumbnail" style="width: 100%;">
+            </a>
+
+            <p><a href="{{ site.baseurl }}/{{ poster.cff }}" target="_blank">View Citation (CFF)</a></p>
+        </div>
+    </div>
+
+    {% if mod_value == 1 or forloop.last %}
+        </div>
+    {% endif %}
+{% endfor %}

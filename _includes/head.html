@@ -11,18 +11,12 @@
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-  <!-- Ionicons -->
-  <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
 
   <!-- Fontawesome -->
   <link href="{{ '/assets/fontawesome/css/fontawesome.css' | relative_url }}" rel="stylesheet" />
   <link href="{{ '/assets/fontawesome/css/brands.css' | relative_url }}" rel="stylesheet" />
   <link href="{{ '/assets/fontawesome/css/solid.css' | relative_url }}" rel="stylesheet" />
 
-  <style>
-  {% capture include_to_scssify %}
-    {% include main.scss %}
-  {% endcapture %}
-  {{ include_to_scssify | scssify }}
-  </style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 </head>

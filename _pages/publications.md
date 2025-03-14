@@ -1,7 +1,6 @@
 ---
-layout: page
+layout: publications
 title: Publications
 permalink: /publications/
 ---
 
-My publications will soon be available here !

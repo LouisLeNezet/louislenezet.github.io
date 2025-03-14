@@ -1,0 +1,47 @@
+.poster-thumbnail img {
+    width: 200px; /* Adjust thumbnail size */
+    height: auto;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+.poster-thumbnail img:hover {
+    transform: scale(1.05);
+}
+
+.poster-box .row {
+    margin: 0 0;
+}
+
+.poster-box .col {
+    padding: 15px;
+}
+
+.poster-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the top */
+    margin-bottom: 20px;
+}
+
+.poster-item h3,
+.poster-item h3 a {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* Force exactly 3 lines */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    /* Ensures all h3 take the same space */
+    min-height: 4.5em; /* 3 lines of text */
+    line-height: 1.5em; 
+    position: relative;
+}
