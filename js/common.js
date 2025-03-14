@@ -31,35 +31,4 @@ $(document).ready(function() {
         headerOverlay.removeClass("is-visible");
     }
 
-
-    /* =======================
-    // Responsive Videos
-    ======================= */
-    $(".post__content, .page__content").fitVids({
-        customSelector: ['iframe[src*="ted.com"]']
-    });
-
-    /* =======================
-    // Zoom Image
-    ======================= */
-    $(".page img, .post img").attr("data-action", "zoom");
-    $(".page a img, .post a img").removeAttr("data-action", "zoom");
-
-    /* =======================
-    // Scroll Top Button
-    ======================= */
-    $(".top").click(function() {
-        $("html, body")
-        .stop()
-        .animate({ scrollTop: 0 }, "slow", "swing");
-    });
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > $(window).height()) {
-        $(".top").addClass("is-active");
-        } else {
-        $(".top").removeClass("is-active");
-        }
-    });
-
-
 });
