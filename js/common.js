@@ -19,7 +19,6 @@ $(document).ready(function() {
 
     headerOverlay.click(function () {
         menuClose();
-        searchClose();
     });
 
     function menuOpen() {
