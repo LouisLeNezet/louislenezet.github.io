@@ -9,7 +9,10 @@ title: Publications
     <li>
         <h3>{{ article.title }}</h3>
         <p>{{ article.citation }}</p>
-        <p><a href="https://doi.org/{{ article.doi }}" target="_blank">Read Article</a></p>
+        {% if article.url %}
+            <p><a href="{{ article.url }}" target="_blank">Read Article</a></p>
+        {% endif %}
+        <p><a href="{{ article.file }}" target="_blank">Download</a></p>
     </li>
 {% endfor %}
 

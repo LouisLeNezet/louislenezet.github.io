@@ -12,6 +12,9 @@
 \usepackage{multirow}  % For multirow cells
 \usepackage[style=authoryear,sorting=ydnt]{biblatex}
 \addbibresource{../articles/LouisLeNezet.bib}
+\AtEveryBibitem{%
+    \clearfield{url}%
+}
 
 % Personal data
 \name{Le Nézet}{Louis}

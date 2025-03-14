@@ -1,24 +1,24 @@
 - authors: Lauranne & Louis & Pascale
-  citation: 'Lauranne & Louis & Pascale (2022). Faire avancer la recherche sur la
-    génétique de la dysplasie coxo-fémorale du chien. DOI: N/A.'
-  doi: ''
+  citation: Lauranne & Louis & Pascale (2022). Faire avancer la recherche sur la génétique
+    de la dysplasie coxo-fémorale du chien.
+  file: /assets/articles/Machou_2022.pdf
   title: Faire avancer la recherche sur la génétique de la dysplasie coxo-fémorale
     du chien
-  url: ''
+  url: https://www.lepointveterinaire.fr/publications/la-semaine-veterinaire/article/n-1928/faire-avancer-la-recherche-sur-la-genetique-de-la-dysplasie-coxo-femorale-du-chien.html
   year: '2022'
 - authors: Zsófia & Patrizia & Dóra & Louis & Enikő
-  citation: 'Zsófia & Patrizia & Dóra & Louis & Enikő (2020). A novel behavioural
-    approach to assess responsiveness to auditory and visual stimuli before cognitive
-    testing in family dogs. DOI: 10.1016/j.applanim.2020.105016.'
-  doi: 10.1016/j.applanim.2020.105016
+  citation: Zsófia & Patrizia & Dóra & Louis & Enikő (2020). A novel behavioural approach
+    to assess responsiveness to auditory and visual stimuli before cognitive testing
+    in family dogs.
+  file: /assets/articles/Bognar_2020.pdf
   title: A novel behavioural approach to assess responsiveness to auditory and visual
     stimuli before cognitive testing in family dogs
-  url: ''
+  url: https://doi.org/10.1016/j.applanim.2020.105016
   year: '2020'
 - authors: Louis & community & Pascale & Catherine
-  citation: 'Louis & community & Pascale & Catherine (2024). PhaseImpute an nf-core
-    pipeline for genetic imputation. DOI: N/A.'
-  doi: ''
+  citation: Louis & community & Pascale & Catherine (2024). PhaseImpute an nf-core
+    pipeline for genetic imputation.
+  file: /assets/articles/LeNezet_2024.pdf
   title: PhaseImpute an nf-core pipeline for genetic imputation
   url: ''
   year: '2024'
