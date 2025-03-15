@@ -14,6 +14,40 @@ The latest release is available in the v3.20 release of [Bioconductor](https://w
 
 *Routines to handle family data with a Pedigree object. The initial purpose was to create correlation structures that describe family relationships such as kinship and identity-by-descent, which can be used to model family data in mixed effects models, such as in the coxme function. Also include a tool for Pedigree drawing which is focused on producing compact layouts without intervention. Recent additions include utilities to trim the Pedigree object with various criteria and kinship for the X chromosome.*
 
+The package is available on [Bioconductor](https://www.bioconductor.org/packages/release/bioc/html/Pedixplorer.html) and can be installed using:
+
+```R
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install("Pedixplorer")
+```
+
+The latest development version is available on [GitHub](https://github.com/LouisLeNezet/Pedixplorer) and allow to create a interactive pedigree plot as follow.
+
+```R
+library(Pedixplorer)
+library(plotly)
+data("sampleped")
+data("relped")
+pedi <- Pedigree(sampleped, relped)
+plot_list <- plot(
+    pedi, symbolsize = 1.5,
+    title = "My pedigree",
+    lwd = 0.5, ggplot_gen = TRUE,
+    tips = c(
+        "id", "avail",
+        "affection",
+        "num", "dateofbirth"
+    )
+)$ggplot %>%
+plotly::ggplotly(
+    tooltip = "text"
+) %>%
+    plotly::layout(hoverlabel = list(bgcolor = "darkgrey"))
+```
+
+<iframe src="/assets/img/pedixplorer/pedigree_interactive.html" width="100%" height="600px" style="border:none;"></iframe>
+
 A dedicated website is available at [louislenezet.github.io/Pedixplorer](https://louislenezet.github.io/Pedixplorer)
 
 ## [Phaseimpute](https://nf-co.re/phaseimpute) nf-core pipeline
