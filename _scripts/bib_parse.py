@@ -34,7 +34,7 @@ for key, entry in bib_data.entries.items():
         "year": year,
         "authors": authors,
         "file": entry.fields.get("file", ""),
-        "citation": f"{authors} ({year}). <i>{title}<\\i>. In: {journal}.",
+        "citation": f"{authors} ({year}). <i> {journal} </i>.",
         "url": url
     }
     
