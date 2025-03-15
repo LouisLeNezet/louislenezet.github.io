@@ -22,29 +22,9 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
 BiocManager::install("Pedixplorer")
 ```
 
-The latest development version is available on [GitHub](https://github.com/LouisLeNezet/Pedixplorer) and allow to create a interactive pedigree plot as follow.
+<br>
 
-```R
-library(Pedixplorer)
-library(plotly)
-data("sampleped")
-data("relped")
-pedi <- Pedigree(sampleped, relped)
-plot_list <- plot(
-    pedi, symbolsize = 1.5,
-    title = "My pedigree",
-    lwd = 0.5, ggplot_gen = TRUE,
-    tips = c(
-        "id", "avail",
-        "affection",
-        "num", "dateofbirth"
-    )
-)$ggplot %>%
-plotly::ggplotly(
-    tooltip = "text"
-) %>%
-    plotly::layout(hoverlabel = list(bgcolor = "darkgrey"))
-```
+The latest development version is available on [GitHub](https://github.com/LouisLeNezet/Pedixplorer) and allow to create a interactive pedigree plot as follow.
 
 <iframe src="/assets/img/pedixplorer/pedigree_interactive.html" width="100%" height="600px" style="border:none;"></iframe>
 

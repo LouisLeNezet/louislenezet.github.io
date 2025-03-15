@@ -23,5 +23,7 @@ filter them and also compute additional information. From this object you can dr
 lots of option the pedigree layout. It is possible with this version to draw them as
 `ggplot2` object allowing to add interactivity with the [plotly](https://plotly.com/) library.
 
+<iframe src="/assets/img/pedixplorer/pedigree_interactive.html" width="100%" height="600px" style="border:none;"></iframe>
+
 All the new functions are also easily available now through a [shiny](https://shiny.posit.co/) application
 available locally by calling the `ped_shiny()` or on a [web server](https://pedixplorer.univ-rennes.fr/).
