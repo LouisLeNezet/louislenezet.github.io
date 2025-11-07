@@ -67,4 +67,5 @@ The CV is written in latex and can be compiled with the following command:
 pdflatex cv_llenezet_2025
 biber cv_llenezet_2025
 pdflatex cv_llenezet_2025
+gs -dNOPAUSE -dBATCH -sDEVICE=jpeg -r300 -sOutputFile=cv_llenezet_2025_%01d.jpg cv_llenezet_2025.pdf
 ```
