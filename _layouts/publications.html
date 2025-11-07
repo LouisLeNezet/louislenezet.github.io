@@ -6,23 +6,24 @@ title: Publications
 <h2>Articles</h2>
 {% assign sorted_articles = site.data.articles | sort: 'year' | reverse %}
 {% for article in sorted_articles %}
+    {% assign url = article.url | default: "" | strip %}
+    {% assign file = article.file | default: "" | strip %}
     <li>
         <h3>{{ article.title }}</h3>
         <p>{{ article.citation }}</p>
 
-        {% assign has_url = article.url != "" %}
-        {% assign has_file = article.file != "" %}
-
-        {% if has_url or has_file %}
+        {% if url != "" or file != "" %}
             <p>
-            {% if has_url %}
-                <a href="{{ article.url }}" target="_blank">Read online</a>
+            {% if url != "" %}
+                <a href="{{ url }}" target="_blank" rel="noopener">Read online</a>
             {% endif %}
-            {% if has_url and has_file %}
+
+            {% if url != "" and file != "" %}
                 &nbsp;or&nbsp;
             {% endif %}
-            {% if has_file %}
-                <a href="{{ article.file }}" target="_blank">View PDF</a>
+
+            {% if file != "" %}
+                <a href="{{ file }}" target="_blank" rel="noopener">View PDF</a>
             {% endif %}
             </p>
         {% endif %}
