@@ -21,13 +21,13 @@
   year: '2024'
 - authors: Jean-Pierre Genevois, Louis Le Nézet, Lauranne Machou, Pascale Quignon,
     Catherine André
-  citation: <i>  </i>.
+  citation: <i> Revue Vétéerinaire Clinique </i>.
   file: ''
   title: Analyse Comparée de La Dysplasie de La Hanche Chez Le Chien et l'Homme
   url: https://doi.org/10.1016/j.anicom.2025.10.001
   year: '2025'
 - authors: Louis Le Nézet, Jason Sinnwell, Anna Letko, Catherine André, Pascale Quignon
-  citation: <i>  </i>.
+  citation: <i> Bioinformatics </i>.
   file: /assets/articles/LeNezet_2025.pdf
   title: 'Pedixplorer: A Bioconductor Package to Streamline Pedigree Design and Visualization'
   url: https://doi.org/10.1093/bioinformatics/btaf329
