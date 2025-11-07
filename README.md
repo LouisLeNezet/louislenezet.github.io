@@ -52,6 +52,13 @@ This file can be sorted and cleaned with the following command:
 sort -u -o .wordlist.txt .wordlist.txt
 ```
 
+## Update article and posters
+
+```bash
+python _scripts/bib_parse.py
+python _scripts/posters_parse.py
+```
+
 
 ## Latex CV compilation
 
@@ -67,4 +74,5 @@ The CV is written in latex and can be compiled with the following command:
 pdflatex cv_llenezet_2025
 biber cv_llenezet_2025
 pdflatex cv_llenezet_2025
+gs -dNOPAUSE -dBATCH -sDEVICE=jpeg -r300 -sOutputFile=cv_llenezet_2025_%01d.jpg cv_llenezet_2025.pdf
 ```

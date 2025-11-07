@@ -6,14 +6,27 @@ title: Publications
 <h2>Articles</h2>
 {% assign sorted_articles = site.data.articles | sort: 'year' | reverse %}
 {% for article in sorted_articles %}
-    <li>
-        <h3>{{ article.title }}</h3>
-        <p>{{ article.citation }}</p>
-        {% if article.url != "" %}
-            <p><a href="{{ article.url }}" target="_blank">Read Article</a> or <a href="{{ article.file }}" target="_blank">Download</a></p>
-        {% else %}
-            <p><a href="{{ article.file }}" target="_blank">Download</a></p>
-        {% endif %}
+    {% assign url = article.url | default: "" | strip %}
+    {% assign file = article.file | default: "" | strip %}
+    <li class="publication">
+        <h3 class="pub-title">{{ article.title }}</h3>
+        <p class="pub-year-authors">{{ article.year }} {{ article.authors }}</p>
+        <p class="pub-citation">{{ article.citation }}</p>
+        <div class="pub-links">
+            {% if url != "" %}
+            <a href="{{ url }}" target="_blank" class="pub-link pub-link-online">
+                <i class="fas fa-globe"></i> Read online
+            </a>
+            {% endif %}
+            {% if url != "" and file != "" %}
+            <span class="pub-sep">·</span>
+            {% endif %}
+            {% if file != "" %}
+            <a href="{{ file }}" target="_blank" class="pub-link pub-link-pdf">
+                <i class="fas fa-file-pdf"></i> View PDF
+            </a>
+            {% endif %}
+        </div>
     </li>
 {% endfor %}
 

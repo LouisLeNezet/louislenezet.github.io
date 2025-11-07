@@ -15,11 +15,16 @@ style = Style()
 for key, entry in bib_data.entries.items():
     title = entry.fields.get("title", "Unknown Title")
     year = entry.fields.get("year", "Unknown Year")
-    authors = [' '.join(map(str, [
-        person.get_part_as_text("first"),
-        person.get_part_as_text("middle"),
-        person.get_part_as_text("last")
-    ])) for person in entry.persons.get("author", [])]
+    authors = [
+        ' '.join(
+            part for part in [
+                person.get_part_as_text("first"),
+                person.get_part_as_text("middle"),
+                person.get_part_as_text("last")
+            ] if part  # filter out empty parts
+        )
+        for person in entry.persons.get("author", [])
+    ]
     authors = ", ".join(map(str, authors))
     url = entry.fields.get("url", "")
     doi = entry.fields.get("doi", "")
@@ -34,7 +39,7 @@ for key, entry in bib_data.entries.items():
         "year": year,
         "authors": authors,
         "file": entry.fields.get("file", ""),
-        "citation": f"{authors} ({year}). <i> {journal} </i>.",
+        "citation": f"<i>{journal}</i>",
         "url": url
     }
     

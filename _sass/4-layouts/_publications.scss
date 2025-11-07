@@ -1,3 +1,82 @@
+.publications {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.publication {
+    background: $white;
+    border-left: 4px solid $dark;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: background 0.3s ease;
+}
+
+.publication:hover {
+    background: $light-gray;
+}
+
+.pub-title {
+    flex: 1;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: $dark;
+    margin: 0;
+    word-wrap: break-word;
+    min-width: 0;
+}
+
+.pub-year-authors {
+    font-size: 0.9rem;
+    color: $dark-gray;
+    margin: 0.4rem 0 0.2rem;
+}
+
+.pub-citation {
+    font-size: 0.9rem;
+    color: $dark-gray;
+    font-style: italic;
+    margin-bottom: 0.6rem;
+}
+
+.pub-links {
+    margin-top: 0.5rem;
+}
+
+.pub-link {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.pub-link i {
+    margin-right: 0.4em;
+}
+
+.pub-link-online {
+    color: $brand-color;
+}
+
+.pub-link-online:hover {
+    color: $brand-color-hover;
+}
+
+.pub-link-pdf {
+    color: $brand-color;
+}
+
+.pub-link-pdf:hover {
+    color: $brand-color-hover;
+}
+
+.pub-sep {
+    color: $gray;
+    padding: 0 0.4rem;
+}
+
 .poster-thumbnail img {
     width: 200px; /* Adjust thumbnail size */
     height: auto;
