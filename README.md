@@ -52,6 +52,13 @@ This file can be sorted and cleaned with the following command:
 sort -u -o .wordlist.txt .wordlist.txt
 ```
 
+## Update article and posters
+
+```bash
+python _scripts/bib_parse.py
+python _scripts/posters_parse.py
+```
+
 
 ## Latex CV compilation
 

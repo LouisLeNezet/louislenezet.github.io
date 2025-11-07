@@ -9,10 +9,22 @@ title: Publications
     <li>
         <h3>{{ article.title }}</h3>
         <p>{{ article.citation }}</p>
-        {% if article.url != "" %}
-            <p><a href="{{ article.url }}" target="_blank">Read Article</a> or <a href="{{ article.file }}" target="_blank">Download</a></p>
-        {% else %}
-            <p><a href="{{ article.file }}" target="_blank">Download</a></p>
+
+        {% assign has_url = article.url != "" %}
+        {% assign has_file = article.file != "" %}
+
+        {% if has_url or has_file %}
+            <p>
+            {% if has_url %}
+                <a href="{{ article.url }}" target="_blank">Read online</a>
+            {% endif %}
+            {% if has_url and has_file %}
+                &nbsp;or&nbsp;
+            {% endif %}
+            {% if has_file %}
+                <a href="{{ article.file }}" target="_blank">View PDF</a>
+            {% endif %}
+            </p>
         {% endif %}
     </li>
 {% endfor %}
