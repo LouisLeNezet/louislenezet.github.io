@@ -14,28 +14,26 @@
     stimuli before cognitive testing in family dogs
   url: https://doi.org/10.1016/j.applanim.2020.105016
   year: '2020'
-- authors: Louis Le N\'ezet, community nf-core, Pascale Quignon, Catherine Andr\'e
-  citation: Louis Le N\'ezet, community nf-core, Pascale Quignon, Catherine Andr\'e
-    (2024). <i> Journées Ouvertes en Biologie, Informatiques et Mathématiques - 2024
-    - Toulouse </i>.
+- authors: Louis Le Nézet, community nf-core, Pascale Quignon, Catherine André
+  citation: Louis Le Nézet, community nf-core, Pascale Quignon, Catherine André (2024).
+    <i> Journées Ouvertes en Biologie, Informatiques et Mathématiques - 2024 - Toulouse
+    </i>.
   file: /assets/articles/LeNezet_2024.pdf
   title: PhaseImpute an nf-core pipeline for genetic imputation
   url: ''
   year: '2024'
-- authors: Jean-Pierre Genevois, Louis Le N\'ezet, Lauranne Machou, Pascale Quignon,
-    Catherine Andr\'e
-  citation: Jean-Pierre Genevois, Louis Le N\'ezet, Lauranne Machou, Pascale Quignon,
-    Catherine Andr\'e (2025). <i>  </i>.
+- authors: Jean-Pierre Genevois, Louis Le Nézet, Lauranne Machou, Pascale Quignon,
+    Catherine André
+  citation: Jean-Pierre Genevois, Louis Le Nézet, Lauranne Machou, Pascale Quignon,
+    Catherine André (2025). <i>  </i>.
   file: ''
-  title: Analyse Compar\'ee de La Dysplasie de La Hanche Chez Le Chien et l'{{Homme}}
+  title: Analyse Comparée de La Dysplasie de La Hanche Chez Le Chien et l'Homme
   url: https://doi.org/10.1016/j.anicom.2025.10.001
   year: '2025'
-- authors: Louis Le N\'ezet, Jason Sinnwell, Anna Letko, Catherine Andr\'e, Pascale
-    Quignon
-  citation: Louis Le N\'ezet, Jason Sinnwell, Anna Letko, Catherine Andr\'e, Pascale
-    Quignon (2025). <i>  </i>.
+- authors: Louis Le Nézet, Jason Sinnwell, Anna Letko, Catherine André, Pascale Quignon
+  citation: Louis Le Nézet, Jason Sinnwell, Anna Letko, Catherine André, Pascale Quignon
+    (2025). <i>  </i>.
   file: /assets/articles/LeNezet_2025.pdf
-  title: 'Pedixplorer: A {{Bioconductor}} Package to Streamline Pedigree Design and
-    Visualization'
+  title: 'Pedixplorer: A Bioconductor Package to Streamline Pedigree Design and Visualization'
   url: https://doi.org/10.1093/bioinformatics/btaf329
   year: '2025'
