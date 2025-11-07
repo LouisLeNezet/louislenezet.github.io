@@ -5,8 +5,8 @@
 }
 
 .publication {
-    background: #f9f9f9;
-    border-left: 4px solid #2c3e50;
+    background: $white;
+    border-left: 4px solid $dark;
     border-radius: 8px;
     padding: 1rem 1.25rem;
     margin-bottom: 1.5rem;
@@ -15,46 +15,28 @@
 }
 
 .publication:hover {
-    background: #f2f7fa;
-}
-
-/* Flex layout fix for wrapping long titles while keeping year aligned */
-.pub-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 1rem;
-    flex-wrap: nowrap;
+    background: $light-gray;
 }
 
 .pub-title {
     flex: 1;
     font-size: 1.1rem;
     font-weight: 600;
-    color: #2c3e50;
+    color: $dark;
     margin: 0;
     word-wrap: break-word;
     min-width: 0;
 }
 
-.pub-year {
+.pub-year-authors {
     font-size: 0.9rem;
-    color: #888;
-    flex-shrink: 0;
-    text-align: right;
-    white-space: nowrap;
-    margin-left: 1rem;
-}
-
-.pub-authors {
-    font-size: 0.9rem;
-    color: #555;
+    color: $gray;
     margin: 0.4rem 0 0.2rem;
 }
 
 .pub-citation {
     font-size: 0.9rem;
-    color: #666;
+    color: $gray;
     font-style: italic;
     margin-bottom: 0.6rem;
 }
@@ -75,23 +57,23 @@
 }
 
 .pub-link-online {
-    color: #2980b9;
+    color: $brand-color;
 }
 
 .pub-link-online:hover {
-    color: #1a5276;
+    color: $brand-color-hover;
 }
 
 .pub-link-pdf {
-    color: #e74c3c;
+    color: $brand-color;
 }
 
 .pub-link-pdf:hover {
-    color: #c0392b;
+    color: $brand-color-hover;
 }
 
 .pub-sep {
-    color: #aaa;
+    color: $grey;
     padding: 0 0.4rem;
 }
 

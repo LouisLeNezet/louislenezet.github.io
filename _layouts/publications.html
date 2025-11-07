@@ -9,11 +9,8 @@ title: Publications
     {% assign url = article.url | default: "" | strip %}
     {% assign file = article.file | default: "" | strip %}
     <li class="publication">
-        <div class="pub-header">
-            <h3 class="pub-title">{{ article.title }}</h3>
-            <span class="pub-year">{{ article.year }}</span>
-        </div>
-        <p class="pub-authors">{{ article.authors }}</p>
+        <h3 class="pub-title">{{ article.title }}</h3>
+        <p class="pub-year-authors">{{ article.year }} {{ article.authors }}</p>
         <p class="pub-citation">{{ article.citation }}</p>
         <div class="pub-links">
             {% if url != "" %}
