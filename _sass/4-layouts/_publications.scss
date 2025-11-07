@@ -1,3 +1,87 @@
+.publications {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.publication {
+    background: #f9f9f9;
+    border-left: 4px solid #2c3e50;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: background 0.3s ease;
+}
+
+.publication:hover {
+    background: #f2f7fa;
+}
+
+.pub-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.pub-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.pub-year {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.pub-authors {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0.4rem 0 0.2rem;
+}
+
+.pub-citation {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 0.6rem;
+}
+
+.pub-links {
+    margin-top: 0.5rem;
+}
+
+.pub-link {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.pub-link-online {
+    color: #2980b9;
+}
+
+.pub-link-online:hover {
+    color: #1a5276;
+}
+
+.pub-link-pdf {
+    color: #27ae60;
+}
+
+.pub-link-pdf:hover {
+    color: #1e8449;
+}
+
+.pub-sep {
+    color: #aaa;
+    padding: 0 0.4rem;
+}
+
 .poster-thumbnail img {
     width: 200px; /* Adjust thumbnail size */
     height: auto;

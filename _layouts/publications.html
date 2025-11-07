@@ -8,25 +8,24 @@ title: Publications
 {% for article in sorted_articles %}
     {% assign url = article.url | default: "" | strip %}
     {% assign file = article.file | default: "" | strip %}
-    <li>
-        <h3>{{ article.title }}</h3>
-        <p>{{ article.citation }}</p>
-
-        {% if url != "" or file != "" %}
-            <p>
+    <li class="publication">
+        <div class="pub-header">
+            <h3 class="pub-title">{{ article.title }}</h3>
+            <span class="pub-year">{{ article.year }}</span>
+        </div>
+        <p class="pub-authors">{{ article.authors }}</p>
+        <p class="pub-citation">{{ article.citation }}</p>
+        <div class="pub-links">
             {% if url != "" %}
-                <a href="{{ url }}" target="_blank" rel="noopener">Read online</a>
+            <a href="{{ url }}" target="_blank" class="pub-link pub-link-online">Read online</a>
             {% endif %}
-
             {% if url != "" and file != "" %}
-                &nbsp;or&nbsp;
+            <span class="pub-sep">·</span>
             {% endif %}
-
             {% if file != "" %}
-                <a href="{{ file }}" target="_blank" rel="noopener">View PDF</a>
+            <a href="{{ file }}" target="_blank" class="pub-link pub-link-pdf">View PDF</a>
             {% endif %}
-            </p>
-        {% endif %}
+        </div>
     </li>
 {% endfor %}
 
