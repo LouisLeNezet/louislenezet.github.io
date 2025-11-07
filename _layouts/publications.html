@@ -17,13 +17,17 @@ title: Publications
         <p class="pub-citation">{{ article.citation }}</p>
         <div class="pub-links">
             {% if url != "" %}
-            <a href="{{ url }}" target="_blank" class="pub-link pub-link-online">Read online</a>
+            <a href="{{ url }}" target="_blank" class="pub-link pub-link-online">
+                <i class="fas fa-globe"></i> Read online
+            </a>
             {% endif %}
             {% if url != "" and file != "" %}
             <span class="pub-sep">·</span>
             {% endif %}
             {% if file != "" %}
-            <a href="{{ file }}" target="_blank" class="pub-link pub-link-pdf">View PDF</a>
+            <a href="{{ file }}" target="_blank" class="pub-link pub-link-pdf">
+                <i class="fas fa-file-pdf"></i> View PDF
+            </a>
             {% endif %}
         </div>
     </li>

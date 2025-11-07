@@ -18,23 +18,32 @@
     background: #f2f7fa;
 }
 
+/* Flex layout fix for wrapping long titles while keeping year aligned */
 .pub-header {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: nowrap;
 }
 
 .pub-title {
+    flex: 1;
     font-size: 1.1rem;
     font-weight: 600;
     color: #2c3e50;
     margin: 0;
+    word-wrap: break-word;
+    min-width: 0;
 }
 
 .pub-year {
     font-size: 0.9rem;
     color: #888;
+    flex-shrink: 0;
+    text-align: right;
+    white-space: nowrap;
+    margin-left: 1rem;
 }
 
 .pub-authors {
@@ -61,6 +70,10 @@
     transition: color 0.3s ease;
 }
 
+.pub-link i {
+    margin-right: 0.4em;
+}
+
 .pub-link-online {
     color: #2980b9;
 }
@@ -70,11 +83,11 @@
 }
 
 .pub-link-pdf {
-    color: #27ae60;
+    color: #e74c3c;
 }
 
 .pub-link-pdf:hover {
-    color: #1e8449;
+    color: #c0392b;
 }
 
 .pub-sep {
