@@ -4,8 +4,7 @@ title: Publications
 ---
 <!-- Articles Section -->
 <h2>Articles</h2>
-{% assign sorted_articles = site.data.articles | sort: 'year' | reverse %}
-{% for article in sorted_articles %}
+{% for article in site.data.articles %}
     {% assign url = article.url | default: "" | strip %}
     {% assign file = article.file | default: "" | strip %}
     <li class="publication">

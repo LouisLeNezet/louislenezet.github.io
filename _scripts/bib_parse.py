@@ -12,9 +12,27 @@ formatted_entries = []
 # Pybtex citation formatter
 style = Style()
 
+# Month mapping for normalization
+month_map = {
+    "jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
+    "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12
+}
+
 for key, entry in bib_data.entries.items():
     title = entry.fields.get("title", "Unknown Title")
     year = entry.fields.get("year", "Unknown Year")
+
+    # Normalize month
+    month_raw = entry.fields.get("month", "")
+    if month_raw:
+        month_raw = month_raw.strip().lower()
+        if month_raw.isdigit():
+            month = int(month_raw)
+        else:
+            month = month_map.get(month_raw[:3], 0)
+    else:
+        month = 0
+
     authors = [
         ' '.join(
             part for part in [
@@ -37,6 +55,7 @@ for key, entry in bib_data.entries.items():
     formatted_entry = {
         "title": title,
         "year": year,
+        "month": month,
         "authors": authors,
         "file": entry.fields.get("file", ""),
         "citation": f"<i>{journal}</i>",
@@ -44,6 +63,15 @@ for key, entry in bib_data.entries.items():
     }
     
     formatted_entries.append(formatted_entry)
+
+# Sort entries by year (descending) and month (descending)
+formatted_entries.sort(
+    key=lambda e: (
+        int(e["year"]) if str(e["year"]).isdigit() else 0,
+        e["month"]
+    ),
+    reverse=True
+)
 
 # Write to YAML
 with open(yml_path, "w") as outfile:
