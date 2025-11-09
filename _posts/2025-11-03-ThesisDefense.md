@@ -11,11 +11,9 @@ tags:
   - thesis
 ---
 
-# Thesis defense
+# *Genetic Basis of Hip Dysplasia in Dogs as a Model for Developmental Dysplasia of the Hip in Humans*
 
-I am excited to announce that I have successfully defended my PhD thesis in genomic bioinformatics at the University of Rennes, France.  
-
-**Title:** *Genetic Basis of Hip Dysplasia in Dogs as a Model for Developmental Dysplasia of the Hip in Humans*
+I am excited to announce that I have successfully defended my PhD thesis in genomic bioinformatics at the University of Rennes, France.
 
 Over the past few decades, dogs (*Canis lupus familiaris*) have become a valuable model for studying complex genetic diseases, thanks to their phenotypic diversity, the result of ancient domestication and intense artificial selection leading to over 400 modern breeds, which can be considered as genetic isolates.
 
