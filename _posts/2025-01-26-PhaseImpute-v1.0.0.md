@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "First release of nf-core/ phaseimpute available"
+title: "First release of nf-core/ phaseimpute"
 date: 2025-01-26
 image: assets/img/phaseimpute/nf-core-phaseimpute_hexagonal_logo.png
 image_post: assets/img/phaseimpute/nf-core-phaseimpute_logo_light.png
@@ -10,8 +10,6 @@ tags:
   - imputation
   - nf-core
 ---
-
-# First release of [nf-core/phaseimpute](https://nf-co.re/phaseimpute/1.0.0/)
 
 I’m excited to announce the first official release of the [nf-core/phaseimpute](https://nf-co.re/phaseimpute/1.0.0/) pipeline, developed in collaboration with [Anabella Trigila](https://github.com/atrigila) and the amazing nf-core community. This pipeline is designed to streamline the **genetic imputation** process, specifically focusing on the preparation of haplotype reference panels for imputing genomic data of target individuals.
 

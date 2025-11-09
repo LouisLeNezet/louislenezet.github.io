@@ -1,23 +1,25 @@
 .article {
-  max-width: 500px;
+  width: 800px;
+  max-width: 100%;
   margin: 0 auto 40px;
 
   .article__wrapper {
     display: flex;
-    justify-content: flex-start; /* 👈 aligns image + text to the left */
+    justify-content: flex-start;
     align-items: stretch;
     gap: 30px;
     background: #fff;
     border-radius: 6px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    min-height: 220px;
+    min-height: 200px;
     width: 100%;
   }
 
   .article__image {
-    flex: 0 0 300px; /* fixed width for all images */
-    height: 250px; /* consistent height */
+    flex: 0 0 200px; /* fixed width for all images */
+    height: 200px;   /* consistent height */
+    width: 200px;
     overflow: hidden;
     transition: opacity 0.2s ease;
     border-radius: 6px 0 0 6px;
@@ -36,13 +38,12 @@
   }
 
   .article__content {
-    width: 600px; /* 👈 fixed width */
-    flex: 0 0 600px; /* prevents resizing */
-    padding: 25px 30px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    background: #fff;
+    /* remove justify-content or set to flex-start */
+    justify-content: flex-start;
+    padding: 25px 30px;
+    width: 100%;
 
     .article__title {
       margin-bottom: 10px;
@@ -58,11 +59,14 @@
     }
 
     .article__excerpt {
-      flex-grow: 1;
+      flex-grow: 0;       /* allow text to take natural height */
       margin-bottom: 20px;
       font-size: 15px;
       line-height: 1.6;
       color: $gray;
+      white-space: normal;       /* allow wrapping */
+      word-wrap: break-word;     /* break long words */
+      overflow-wrap: break-word; /* modern alternative */
     }
 
     .article__footer {
@@ -77,6 +81,7 @@
       text-transform: uppercase;
       color: $gray;
       border-bottom: 1px solid transparent;
+      justify-content: flex-end;
       &:hover {
         color: $brand-color;
         border-color: $brand-color;
