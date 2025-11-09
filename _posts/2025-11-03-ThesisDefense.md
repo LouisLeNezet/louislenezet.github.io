@@ -3,7 +3,7 @@ layout: post
 title: "Thesis defense"
 date: 2025-11-03
 image: assets/img/thesis/icon_thesis.png
-image_post: assets/img/thesis/icon_thesis.png
+image_post: assets/img/thesis/thesis_banner.png
 description: Thesis defense in genomic bioinformatics on the genetic basis
   of hip dysplasia in dogs as a model for humans
 tags:
