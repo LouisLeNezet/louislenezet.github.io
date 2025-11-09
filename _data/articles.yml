@@ -1,6 +1,38 @@
+- authors: Louis Le Nézet
+  citation: <i>Thèse, Université de Rennes</i>
+  file: /assets/articles/LeNezet_thesis_2025.pdf
+  month: 11
+  title: Recherche des bases génétiques de la Dysplasie Coxo-Fémorale chez le chien
+    guide comme modèle de la Dysplasie Développementale de la Hanche chez l'humain
+  url: ''
+  year: '2025'
+- authors: Jean-Pierre Genevois, Louis Le Nézet, Lauranne Machou, Pascale Quignon,
+    Catherine André
+  citation: <i>Revue Vétérinaire Clinique</i>
+  file: ''
+  month: 10
+  title: Analyse Comparée de La Dysplasie de La Hanche Chez Le Chien et l'Homme
+  url: https://doi.org/10.1016/j.anicom.2025.10.001
+  year: '2025'
+- authors: Louis Le Nézet, Jason Sinnwell, Anna Letko, Catherine André, Pascale Quignon
+  citation: <i>Bioinformatics</i>
+  file: /assets/articles/LeNezet_2025.pdf
+  month: 6
+  title: 'Pedixplorer: A Bioconductor Package to Streamline Pedigree Design and Visualization'
+  url: https://doi.org/10.1093/bioinformatics/btaf329
+  year: '2025'
+- authors: Louis Le Nézet, community nf-core, Pascale Quignon, Catherine André
+  citation: <i>Journées Ouvertes en Biologie, Informatiques et Mathématiques - 2024
+    - Toulouse</i>
+  file: /assets/articles/LeNezet_2024.pdf
+  month: 6
+  title: PhaseImpute an nf-core pipeline for genetic imputation
+  url: ''
+  year: '2024'
 - authors: Lauranne Machou, Louis Le Nézet, Pascale Quignon
   citation: <i>La semaine vétérinaire</i>
   file: /assets/articles/Machou_2022.pdf
+  month: 1
   title: Faire avancer la recherche sur la génétique de la dysplasie coxo-fémorale
     du chien
   url: https://www.lepointveterinaire.fr/publications/la-semaine-veterinaire/article/n-1928/faire-avancer-la-recherche-sur-la-genetique-de-la-dysplasie-coxo-femorale-du-chien.html
@@ -8,27 +40,8 @@
 - authors: Zsófia Bognár, Patrizia Piotti, Dóra Szabó, Louis Le Nézet, Enikő Kubinyi
   citation: <i>Applied Animal Behaviour Science</i>
   file: /assets/articles/Bognar_2020.pdf
+  month: 7
   title: A novel behavioural approach to assess responsiveness to auditory and visual
     stimuli before cognitive testing in family dogs
   url: https://doi.org/10.1016/j.applanim.2020.105016
   year: '2020'
-- authors: Louis Le Nézet, community nf-core, Pascale Quignon, Catherine André
-  citation: <i>Journées Ouvertes en Biologie, Informatiques et Mathématiques - 2024
-    - Toulouse</i>
-  file: /assets/articles/LeNezet_2024.pdf
-  title: PhaseImpute an nf-core pipeline for genetic imputation
-  url: ''
-  year: '2024'
-- authors: Jean-Pierre Genevois, Louis Le Nézet, Lauranne Machou, Pascale Quignon,
-    Catherine André
-  citation: <i>Revue Vétérinaire Clinique</i>
-  file: ''
-  title: Analyse Comparée de La Dysplasie de La Hanche Chez Le Chien et l'Homme
-  url: https://doi.org/10.1016/j.anicom.2025.10.001
-  year: '2025'
-- authors: Louis Le Nézet, Jason Sinnwell, Anna Letko, Catherine André, Pascale Quignon
-  citation: <i>Bioinformatics</i>
-  file: /assets/articles/LeNezet_2025.pdf
-  title: 'Pedixplorer: A Bioconductor Package to Streamline Pedigree Design and Visualization'
-  url: https://doi.org/10.1093/bioinformatics/btaf329
-  year: '2025'

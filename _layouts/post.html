@@ -14,7 +14,7 @@ layout: default
         <div class="post__info">
           <div class="post__author">
             <span>By</span>
-            <a href="{{ site.baseurl }}/about/" class="author-name">{{site.data.settings.author.name}}</a>
+            <a class="author-name">{{site.data.settings.author.name}}</a>
           </div>
 
           {% if page.tags.size >= 1 %}
@@ -32,7 +32,9 @@ layout: default
   {% assign no-image = nil %}
   {% if page.image %}
     <div class="post__head">
-      <div class="post-image" style="background-image: url({{site.baseurl}}/{{page.image_post}})"></div>
+      <a href="{{ site.baseurl }}/{{ page.image_post }}">
+        <div class="post-image" style="background-image: url({{site.baseurl}}/{{page.image_post}})"></div>
+      </a>
     </div>
   {% else %}
     {% assign no-image = 'post-no-image' %}

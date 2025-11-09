@@ -1,10 +1,10 @@
 .post-title-box {
-  padding: 80px 0;
+  padding: 40px 0;
   border-top: 1px solid $light-gray;
 
   .post-title {
     margin-bottom: 10px;
-    width: 500px;
+    width: 800px;
     max-width: 100%;
     font-size: 57px;
     line-height: 70px;
@@ -35,30 +35,26 @@
     
     .author-name {
       color: $gray;
-      border-bottom: 1px solid transparent;
-      &:hover {
-        border-bottom: 1px solid $gray;
-      }
     }
   }
 
   .post__tags {
-   .post__tags-tag {
-     position: relative;
-     padding-left: 15px;
-     font-weight: 700;
-     &:before {
-       content: "";
-       position: absolute;
-       top: 50%;
-       left: 0;
-       transform: translateY(-50%);
-       width: 5px;
-       height: 5px;
-       border-radius: 50%;
-       background: $dark;
-     }
-   } 
+    .post__tags-tag {
+      position: relative;
+      padding-left: 15px;
+      font-weight: 700;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: $dark;
+      }
+    } 
   }
 }
 
@@ -66,7 +62,8 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 150px;
+    height: 200px;
+    max-width: 100%;
   &:after {
     content: "";
     display: table;
@@ -75,14 +72,14 @@
 }
 
 .post {
-  margin: 80px auto;
+  margin: 20px auto 80px;
 
   &.post-no-image {
     margin: 0 auto 80px; 
   }
 
   @media only screen and (max-width: $mobile) {
-    margin: 40px auto;
+    margin: 20px auto 40px;
 
     &.post-no-image {
       margin: 0 auto 40px;
@@ -90,12 +87,12 @@
   }
 
   img {
-    margin: 30px 0;
+    margin: 20px 0;
   }
 }
 
 .post__content {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .post__share {
@@ -159,7 +156,7 @@
 
     .post__nav__title {
       margin-bottom: 20px;
-      font-size: 27px;
+      font-size: 16px;
       line-height: 37px;
       text-transform: uppercase;
       letter-spacing: 2px;

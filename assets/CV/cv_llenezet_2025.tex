@@ -2,7 +2,13 @@
 
 % ModernCV themes
 \moderncvstyle{banking} % Style options: banking, casual, classic, oldstyle
-\moderncvcolor{blue}   % Color options: blue, orange, green, red, purple, grey
+\moderncvcolor{blue}  % Color options: blue, orange, green, red, purple, grey
+
+% Now override or define your own custom color
+\definecolor{mycustomcolor}{HTML}{F6B141} % example: a warm orange (#F6B141)
+\colorlet{color0}{black} % main color (headings, etc.)
+\colorlet{color1}{mycustomcolor} % secondary color (section titles, etc.)
+\colorlet{color2}{mycustomcolor!60!black} % tertiary color (body elements)
 
 % Adjust margins
 \usepackage[top=1.5cm, bottom=1.75cm, left=1.75cm, right=1.75cm]{geometry}
@@ -10,11 +16,20 @@
 
 \usepackage[
     style=authoryear,
-    sorting=ydnt,
+    sorting=ymnt,     % Sort by year (descending), then by name, then title
     maxbibnames=99,   % Show up to 99 authors in bibliography
     maxcitenames=99   % Show all authors in in-text citations too (optional)
 ]{biblatex}
 
+\DeclareSortingScheme{ymnt}{
+    \sort[direction=descending]{\field{year}}
+    \sort[direction=descending]{\field{month}}
+    \sort{
+        \field{author}
+        \field{title}
+    }
+}
+\DeclareNameAlias{author}{given-family}
 \addbibresource{../articles/LouisLeNezet.bib}
 \AtEveryBibitem{%
     \clearfield{url}%
@@ -108,8 +123,6 @@
 \renewcommand{\section}[2]{}%
 \printbibliography
 \endgroup
-
-\clearpage
 
 % Section: Presentations
 \section{Presentations}

@@ -1,0 +1,46 @@
+<!-- begin article -->
+<div class="article">
+  <div class="article__wrapper">
+
+    {% if post.image %}
+      <a href="{{post.url | prepend: site.baseurl}}" class="article__image">
+        <img src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}">
+      </a>
+    {% else %}
+      {% assign without-image = 'article-without-image' %}
+    {% endif %}
+
+    <div class="article__content {{ without-image }}">      
+      <h2 class="article__title">
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+
+      {% if post.tags.size >= 1 %}
+      <div class="article-tags__box">
+        {% for tag in post.tags %}
+          <a href="{{ site.baseurl }}/tag/{{ tag | downcase | replace: " ", "-" }}" class="article__tag">{{ tag }}{% unless forloop.last %}, {% endunless %}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <p class="article__excerpt">
+        {% if post.description %}
+          {{ post.description }}
+        {% else %}
+          {{ post.content | strip_html | truncate: 185 }}
+        {% endif %}
+      </p>
+      
+      <div class="article__footer">
+        <span class="article__date">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+        </span>
+        <a href="{{post.url | prepend: site.baseurl}}" class="read-more">
+          Keep Reading <ion-icon name="arrow-forward-outline"></ion-icon>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- end article -->

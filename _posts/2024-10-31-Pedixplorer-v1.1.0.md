@@ -11,9 +11,8 @@ tags:
   - R
 ---
 
-# New version of the Bioconductor [Pedixplorer](https://www.bioconductor.org/packages/release/bioc/html/Pedixplorer.html) package
+A new version of the Bioconductor [Pedixplorer](https://www.bioconductor.org/packages/release/bioc/html/Pedixplorer.html) package is now available, dedicated to create, filter and draw complex pedigree.
 
-I've developed a R package dedicated to create, filter and draw complex pedigree.
 This package is an update of the original [Kinship2 package](https://github.com/mayoverse/kinship2)
 available in CRAN.
 However, it wasn't anymore maintained, and I needed new features for my PhD project.
