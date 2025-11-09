@@ -1,7 +1,8 @@
-.publications {
-    list-style: none;
-    padding: 0;
-    margin: 2rem 0;
+.publication {
+    list-style: none; /* removes bullet */
+    margin-left: 0;   /* remove default indentation */
+    padding-left: 0;  /* optional: remove padding */
+    margin-bottom: 20px; /* optional spacing between items */
 }
 
 .publication {

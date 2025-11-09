@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "First release of nf-core/phaseimpute available"
+title: "First release of nf-core/ phaseimpute available"
 date: 2025-01-26
 image: assets/img/phaseimpute/nf-core-phaseimpute_hexagonal_logo.png
 image_post: assets/img/phaseimpute/nf-core-phaseimpute_logo_light.png
