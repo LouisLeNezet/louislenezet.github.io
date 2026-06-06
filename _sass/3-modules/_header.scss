@@ -152,3 +152,47 @@
     }
   }
 }
+
+/* Parent dropdown container */
+.nav__item--dropdown {
+  position: relative;
+}
+
+/* Hidden by default */
+.dropdown__menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 220px;
+  border-radius: 6px;
+  overflow: hidden;
+  width: max-content;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  z-index: 999;
+  padding: 10px 0;
+}
+
+/* Dropdown items */
+.dropdown__item {
+  padding: 0;
+  width: 100%;
+}
+
+.dropdown__menu .nav__link {
+  display: block;
+  padding: 10px 15px;
+  width: 100%;
+  white-space: nowrap;
+}
+
+/* Show on hover (desktop) */
+.nav__item--dropdown:hover .dropdown__menu {
+  display: block;
+}
+
+/* Optional hover effect */
+.dropdown__menu .nav__link:hover {
+  background: #f5f5f5;
+}
