@@ -1,0 +1,33 @@
+- name: nf-core/phaseimpute
+  authors: Louis Le Nézet, Anabella Trigila
+  version: 1.1.0
+  description: Pedigree creation, plotting, and analytics
+  github_url: 'https://github.com/nf-core/phaseimpute'
+  documentation_url: 'https://nf-co.re/phaseimpute/dev'
+  doi: '10.5281/zenodo.14329225'
+  swhid: 'swh:1:dir:e5e37a1d87cac1d034231d3793e7667d53aea4fc'
+  language: 'nextflow'
+  licence: 'MIT'
+  logo: 'assets/img/phaseimpute/nf-core-phaseimpute_hexagonal_logo.png'
+- name: Pedixplorer
+  authors: Louis Le Nézet, Jason Sinnwell
+  version: 1.7.1
+  description: Pedigree creation, plotting, and analytics
+  github_url: 'https://github.com/LouisLeNezet/Pedixplorer'
+  documentation_url: 'https://louislenezet.github.io/Pedixplorer/'
+  doi: '10.1093/bioinformatics/btaf329'
+  swhid: 'swh:1:dir:e11c74c6074270a14e496e0acdf5d5a05fdb8a97'
+  language: 'r'
+  licence: 'GPLv2'
+  logo: 'assets/img/pedixplorer/icon_Pedixplorer.png'
+- name: files2db
+  authors: Louis Le Nézet
+  version: 0.0.1
+  description: Aggregate data from many file to a comprehensive database
+  github_url: 'https://github.com/LouisLeNezet/files2db'
+  documentation_url: 'https://louislenezet.github.io/files2db/'
+  doi: ''
+  swhid: 'swh:1:dir:2ef1cd4edea6fa13735e0432811e8c7690621753'
+  language: 'python'
+  licence: 'GPLv3'
+  logo: 'assets/img/files2db/files2db_hexagonal_logo.png'

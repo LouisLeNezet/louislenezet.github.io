@@ -1,0 +1,193 @@
+.section-block {
+    margin-bottom: 4rem;
+    padding: 1rem 1.5rem 2rem;
+    background: #fafafa;
+    border-radius: 10px;
+}
+
+.section-block:last-of-type {
+    border-bottom: none;
+}
+
+.publication {
+    list-style: none; /* removes bullet */
+    margin-left: 0;   /* remove default indentation */
+    padding-left: 0;  /* optional: remove padding */
+    margin-bottom: 20px; /* optional spacing between items */
+}
+
+.publication {
+    position: relative;
+
+    background: $white;
+    border-left: 4px solid $dark;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+
+    /* reserve space for icon and licence */
+    padding-right: 5rem;
+}
+
+.publication:hover {
+    background: $light-gray;
+}
+
+.tool-language-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+.tool-licence {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+
+    font-size: 0.85rem;
+    color: $gray;
+    font-style: italic;
+}
+
+.tool-content {
+    flex: 1;
+}
+
+.tool-logo {
+    position: absolute;
+    right: 10rem;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 100px;
+}
+
+.tool-logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.pub-title {
+    flex: 1;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: $dark;
+    margin: 0;
+    word-wrap: break-word;
+    min-width: 0;
+}
+
+.pub-authors {
+    font-size: 0.9rem;
+    color: $dark-gray;
+    margin: 0.4rem 0 0.2rem;
+}
+
+.pub-citation {
+    font-size: 0.9rem;
+    color: $dark-gray;
+    font-style: italic;
+    margin-bottom: 0.6rem;
+}
+
+.pub-description {
+    font-size: 0.9rem;
+    color: $dark-gray;
+    margin-bottom: 0.6rem;
+}
+
+.pub-links {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap; /* allows wrapping on small screens */
+    gap: 0.75rem;
+}
+
+.pub-link {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.pub-link i {
+    margin-right: 0.2em;
+}
+
+.pub-link span {
+    margin-right: 0.2em;
+}
+
+.pub-link-online {
+    color: $brand-color;
+}
+
+.pub-link-online:hover {
+    color: $brand-color-hover;
+}
+
+.pub-link-pdf {
+    color: $brand-color;
+}
+
+.pub-link-pdf:hover {
+    color: $brand-color-hover;
+}
+
+.pub-sep {
+    color: $gray;
+    padding: 0 0.4rem;
+}
+
+.poster-thumbnail img {
+    width: 200px; /* Adjust thumbnail size */
+    height: auto;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+.poster-thumbnail img:hover {
+    transform: scale(1.05);
+}
+
+.poster-box .row {
+    margin: 0 0;
+}
+
+.poster-box .col {
+    padding: 15px;
+}
+
+.poster-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the top */
+    margin-bottom: 20px;
+}
+
+.poster-item h3,
+.poster-item h3 a {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* Force exactly 3 lines */
+    line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    /* Ensures all h3 take the same space */
+    min-height: 4.5em; /* 3 lines of text */
+    line-height: 1.5em; 
+    position: relative;
+}
