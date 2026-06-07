@@ -1,5 +1,6 @@
 ---
 layout: default
+toc: true
 ---
 <div class="container">
 	<div class="page-title-box">
@@ -19,13 +20,17 @@ layout: default
 
 
 <div class="container">
-	<div class="row">
-		<!-- begin page -->
-		<article class="page col col-10 col-t-10 col-m-12">
+	<div class="row page-layout">
+		<!-- SIDEBAR TOC -->
+		{% if page.toc %}
+			{% include toc.html %}
+		{% endif %}
+
+		<!-- MAIN CONTENT -->
+		<article class="page col col-10 col-t-9 col-m-12">
 			<div class="page__content">
 				{{ content }}
 			</div>
 		</article>
-		<!-- end page -->
 	</div>
 </div>

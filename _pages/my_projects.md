@@ -2,13 +2,14 @@
 layout: page
 title: My projects
 permalink: /projects/
+toc: true
 ---
 
 # PhD projects
 
 During my thesis I've developed different tools that are available publicly.
 
-## [Pedixplorer](https://www.bioconductor.org/packages/release/bioc/html/Pedixplorer.html) Bioconductor package
+## [Pedixplorer](https://www.bioconductor.org/packages/release/bioc/html/Pedixplorer.html)
 
 The latest release is available in the v3.20 release of [Bioconductor](https://www.bioconductor.org).
 
@@ -30,7 +31,7 @@ The latest development version is available on [GitHub](https://github.com/Louis
 
 A dedicated website is available at [louislenezet.github.io/Pedixplorer](https://louislenezet.github.io/Pedixplorer)
 
-## [Phaseimpute](https://nf-co.re/phaseimpute) nf-core pipeline
+## [nf-core/phaseimpute](https://nf-co.re/phaseimpute)
 
 **nf-core/phaseimpute** is a bioinformatics pipeline to phase and impute genetic data.
 The pipeline is constituted of the five following steps:

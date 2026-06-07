@@ -44,17 +44,22 @@ layout: default
 
 
   <div class="container">
-  <div class="row">
-    <!-- begin post -->
-    <article class="post {{ no-image }} col col-8 col-t-10 col-m-12">
+    <div class="row page-layout">
 
+    <!-- SIDEBAR TOC -->
+    {% if page.toc %}
+    <aside class="page-toc col col-2 col-t-3">
+      <nav class="toc" id="table-of-contents"></nav>
+    </aside>
+    {% endif %}
+
+    <!-- MAIN CONTENT -->
+    <article class="post {{ no-image }} col col-8 col-t-9 col-m-12">
       <div class="post__content">
         {{ content }}
       </div>
     </article>
-    <!-- end post -->
     </div>
-  </div>
 
   <div class="container">
   <div class="post__navigation">

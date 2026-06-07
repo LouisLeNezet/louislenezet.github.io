@@ -227,3 +227,8 @@
     margin-bottom: 40px;
   }
 }
+
+.post__content h1,
+.post__content h2 {
+  scroll-margin-top: 120px; // header height + padding
+}

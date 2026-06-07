@@ -47,6 +47,11 @@
   }
 }
 
+.page__content h1,
+.page__content h2 {
+  scroll-margin-top: 120px; // header height + padding
+}
+
 .full-width-pdf {
   width: 800px;
   height: 100vh; /* Adjust the height as needed */

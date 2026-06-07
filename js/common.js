@@ -47,3 +47,63 @@ $(document).ready(function() {
     });
 
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const content = document.querySelector(".page__content, .post__content");
+    const toc = document.querySelector("#table-of-contents");
+
+    if (!content || !toc) return;
+
+    // -----------------------------
+    // 1. Generate IDs for headings
+    // -----------------------------
+    const headings = content.querySelectorAll("h1, h2");
+
+    headings.forEach(h => {
+        if (!h.id) {
+        h.id = h.textContent
+            .trim()
+            .toLowerCase()
+            .replace(/[^\w\s-]/g, "")
+            .replace(/\s+/g, "-");
+        }
+    });
+
+    // -----------------------------
+    // 2. Build TOC
+    // -----------------------------
+    const ul = document.createElement("ul");
+
+    headings.forEach(h => {
+        const li = document.createElement("li");
+
+        li.className = h.tagName.toLowerCase();
+
+        li.innerHTML = `
+        <a href="#${h.id}">
+            ${h.textContent}
+        </a>
+        `;
+
+        ul.appendChild(li);
+    });
+
+    toc.appendChild(ul);
+
+    // -----------------------------
+    // 3. Mobile toggle
+    // -----------------------------
+    const toggle = document.querySelector(".toc__mobile-toggle");
+    const sidebar = document.querySelector(".page-toc");
+
+    if (toggle && sidebar) {
+        toggle.addEventListener("click", () => {
+        sidebar.classList.toggle("is-open");
+        });
+    }
+
+});
+
+document.querySelector(".toc__mobile-toggle")?.addEventListener("click", () => {
+    document.querySelector(".page-toc").classList.toggle("is-open");
+});
