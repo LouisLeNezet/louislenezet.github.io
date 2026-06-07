@@ -54,6 +54,8 @@ nextflow run nf-core/phaseimpute \
    --outdir <OUTDIR>
 ```
 
+<br>
+
 ## BioShinyModules
 
 I've participated to the St-Judes BioHackathon in 2023 and worked on a R package proposing
@@ -63,15 +65,93 @@ have a common layout for all the modules to make them easily usable and operable
 The package isn't yet published, but we hope to make it available through Bioconductor as a proof of concept
 to pave the way for nice and reusable shiny components.
 
-## Files to Database
+## [Files2db](https://louislenezet.github.io/files2db/)
 
 My PhD project is based on an already existing project of the IGDR Dog Genetics Team. Therefore multiple
 people have already worked on this project, and numerous files (i.e. xlsx, csv, ...) have been created
 along the years to record the data. However, no aggregation was already done, and the data needed to be
 normalized to be able to analyse it.
 
-As the amount of data and normalization to be processed was important, I decided to create a python script
-allowing to automatize the process. This script is now available as a python package but needs to be
-modified to be generalisable to any project.
+My PhD project builds upon an existing research program developed by the Dog Genetics Team at IGDR.
+Over the years, numerous data files (e.g., Excel spreadsheets, CSV files, and other formats) were created
+to record and manage project data.
+However, these datasets remained fragmented, with no unified system for aggregation or normalization,
+making large-scale analyses difficult.
 
-This will be done in the near future. I hope !
+To address this challenge, I developed a Python tool that automates the aggregation, cleaning, and
+normalization of heterogeneous data sources.
+The project has since evolved into a reusable Python package that provides a reproducible framework
+for transforming disparate datasets into a consistent format.
+Although originally designed for my PhD work, it can be applied to many research projects that require
+reliable and reproducible data integration workflows.
+
+# Personal projects
+
+As the previous example illustrates, I enjoy automating repetitive tasks and experimenting with new
+technologies. Here are some of the personal projects I have made available publicly.
+
+## [AutoCatFeeder](https://github.com/LouisLeNezet/autoCatFeeder)
+
+<div style="display:flex; flex-wrap:wrap; align-items:center; gap:3rem;">
+
+  <div style="flex:1 1 70%; min-width:300px;">
+    <p>
+        My cat had a tendency to overeat when food was freely available.
+        Since commercial automatic feeders were relatively expensive,
+        I decided to design and build my own solution.
+    </p>
+    <p>
+        With a bit of plywood, some 3D impression are recycled toy motor and an
+        arduino UNO, this feeder can serve as many small / big portion as needed
+        for any cat. For larger croquettes the helicoïdal screw would need to be
+        printed bigger.
+    </p>
+    <p>
+        The project includes both the hardware construction plans and the
+        software required to operate the feeder, all of which are available
+        on GitHub. I have been using it daily for more than six years, and
+        it continues to work reliably.
+    </p>
+  </div>
+
+  <div style="flex:1 1 10%; min-width:150px; text-align:center;">
+    <img
+      src="/assets/img/personal/autocatfeeder.png"
+      alt="AutoCatFeeder exploded view"
+      style="max-width:100%; height:auto;"
+    >
+  </div>
+
+</div>
+
+## [AikiGrade](https://github.com/LouisLeNezet/AikiGrade)
+
+<div style="display:flex; flex-wrap:wrap; align-items:center; gap:3rem;">
+
+  <div style="flex:1 1 70%; min-width:300px;">
+    <p>
+        I practice Aikido, a Japanese martial art that requires students to learn and master
+        a wide variety of attacks, techniques, and forms before grading examinations.
+    </p>
+    <p>
+        To help practitioners prepare for these exams, I developed AikiGrade, a Flutter application
+        that generates self-assessment sessions.
+        The application allows users to practice techniques, test their knowledge, and track their
+        progress in a structured way.
+    </p>
+    <p>
+        It is freely available on the web and run locally on the web browser.
+        Everything is stored in json file on the user machine.
+    </p>
+  </div>
+
+  <div style="flex:1 1 10%; min-width:150px; text-align:center;">
+    <img
+      src="/assets/img/personal/aikigrade.png"
+      href="https://louislenezet.github.io/AikiGrade/"
+      alt="AïkiGrade"
+      style="max-width:100%; height:auto;"
+    >
+  </div>
+
+</div>
