@@ -89,21 +89,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     toc.appendChild(ul);
-
-    // -----------------------------
-    // 3. Mobile toggle
-    // -----------------------------
-    const toggle = document.querySelector(".toc__mobile-toggle");
-    const sidebar = document.querySelector(".page-toc");
-
-    if (toggle && sidebar) {
-        toggle.addEventListener("click", () => {
-        sidebar.classList.toggle("is-open");
-        });
-    }
-
 });
 
-document.querySelector(".toc__mobile-toggle")?.addEventListener("click", () => {
-    document.querySelector(".page-toc").classList.toggle("is-open");
-});
