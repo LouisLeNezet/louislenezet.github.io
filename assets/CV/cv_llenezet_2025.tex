@@ -15,6 +15,15 @@
     maxcitenames=99   % Show all authors in in-text citations too (optional)
 ]{biblatex}
 
+\DeclareSortingTemplate{ymnt}{
+    \sort[direction=descending]{\field{year}}
+    \sort[direction=descending]{\field{month}}
+    \sort{
+        \field{author}
+        \field{title}
+    }
+}
+\DeclareNameAlias{author}{given-family}
 \addbibresource{../articles/LouisLeNezet.bib}
 \AtEveryBibitem{%
     \clearfield{url}%
@@ -52,13 +61,15 @@
 % Section: Positions
 \section{Positions}
 \begin{tabularx}{\textwidth}{p{1.5cm} X}
-    2025 & \textbf{PhD Student}, UMR 6290 IGDR, France:
+    2026 & \textbf{Post-Doctoral Researcher}, UMR 1078 GGB, Brest - France
+        \enquote{\textit{A Pangenomic-enabled high-capacity haplotyping objective - PANHCHO}} \\
+    2025 & \textbf{PhD Student}, UMR 6290 IGDR, Rennes - France:
         \enquote{\textit{Genetics basics of hip dysplasia in dogs as a model for developmental dysplasia of the hip in humans}} \\
-    2021 & \textbf{Research technician}, UMR 6290 IGDR, France:
+    2021 & \textbf{Research technician}, UMR 6290 IGDR, Rennes - France:
         \enquote{\textit{Genetics of hips dysplasia in guide dogs}} \\
-    2018 & \textbf{Ethology internship}, UMR 6552 EthoS, France:
+    2018 & \textbf{Ethology internship}, UMR 6552 EthoS, Paimpont - France:
         \enquote{\textit{Social stress and comfort food in ponies \textbf{Equus caballus} and in collared mangabeys \textbf{Cercocebus torquatus}}} \\
-    2017 & \textbf{Ethology internship}, Eötvös Loránd University, Department of Ethology, Budapest:
+    2017 & \textbf{Ethology internship}, Eötvös Loránd University, Department of Ethology, Budapest - :
         \enquote{\textit{Screening for sensory decline in ageing pet dogs}} \\    
 \end{tabularx}
 
