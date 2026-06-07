@@ -1,0 +1,80 @@
+.doi-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.25em;
+    vertical-align: -0.125em;
+
+    background-color: currentColor;
+
+    -webkit-mask: url('/assets/icons/doi.svg') no-repeat center;
+    mask: url('/assets/icons/doi.svg') no-repeat center;
+
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+.r-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.25em;
+    vertical-align: -0.125em;
+
+    background-color: currentColor;
+
+    -webkit-mask: url('/assets/icons/r.svg') no-repeat center;
+    mask: url('/assets/icons/r.svg') no-repeat center;
+
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+.python-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.25em;
+    vertical-align: -0.125em;
+
+    background-color: currentColor;
+
+    -webkit-mask: url('/assets/icons/python.svg') no-repeat center;
+    mask: url('/assets/icons/python.svg') no-repeat center;
+
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+.nextflow-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.25em;
+    vertical-align: -0.125em;
+
+    background-color: currentColor;
+
+    -webkit-mask: url('/assets/icons/nextflow.svg') no-repeat center;
+    mask: url('/assets/icons/nextflow.svg') no-repeat center;
+
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+.software-heritage-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.25em;
+    vertical-align: -0.125em;
+
+    background-color: currentColor;
+
+    -webkit-mask: url('/assets/icons/software_heritage.svg') no-repeat center;
+    mask: url('/assets/icons/software_heritage.svg') no-repeat center;
+
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+

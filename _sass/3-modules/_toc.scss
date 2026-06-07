@@ -1,0 +1,56 @@
+
+.page-toc {
+    position: sticky;
+    top: 120px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    border-right: 1px solid $light-gray;
+    padding-right: 20px;
+    font-size: 0.9rem;
+}
+
+.page-toc a {
+    display: block;
+    padding: 4px 0;
+}
+
+.toc ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc li {
+    margin: 6px 0;
+}
+
+.toc li.h2 {
+    padding-left: 12px;
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+.toc a {
+    text-decoration: none;
+    color: $dark;
+}
+
+@media (max-width: $desktop) {
+    .page-toc {
+        position: sticky;
+        top: 100px; /* slightly tighter than desktop */
+        max-height: calc(100vh - 100px);
+        border-right: 1px solid $light-gray;
+        padding-right: 10px;
+        font-size: 0.75rem;
+    }
+
+    .toc li.h2 {
+        padding-left: 8px;
+        font-size: 0.75rem;
+    }
+
+    .toc li {
+        margin: 4px 0;
+    }
+}

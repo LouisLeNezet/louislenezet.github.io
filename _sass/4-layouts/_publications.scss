@@ -1,3 +1,14 @@
+.section-block {
+    margin-bottom: 4rem;
+    padding: 1rem 1.5rem 2rem;
+    background: #fafafa;
+    border-radius: 10px;
+}
+
+.section-block:last-of-type {
+    border-bottom: none;
+}
+
 .publication {
     list-style: none; /* removes bullet */
     margin-left: 0;   /* remove default indentation */
@@ -6,17 +17,58 @@
 }
 
 .publication {
+    position: relative;
+
     background: $white;
     border-left: 4px solid $dark;
     border-radius: 8px;
     padding: 1rem 1.25rem;
     margin-bottom: 1.5rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    transition: background 0.3s ease;
+
+    /* reserve space for icon and licence */
+    padding-right: 5rem;
 }
 
 .publication:hover {
     background: $light-gray;
+}
+
+.tool-language-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+.tool-licence {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+
+    font-size: 0.85rem;
+    color: $gray;
+    font-style: italic;
+}
+
+.tool-content {
+    flex: 1;
+}
+
+.tool-logo {
+    position: absolute;
+    right: 10rem;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 100px;
+}
+
+.tool-logo img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .pub-title {
@@ -29,7 +81,7 @@
     min-width: 0;
 }
 
-.pub-year-authors {
+.pub-authors {
     font-size: 0.9rem;
     color: $dark-gray;
     margin: 0.4rem 0 0.2rem;
@@ -42,8 +94,17 @@
     margin-bottom: 0.6rem;
 }
 
+.pub-description {
+    font-size: 0.9rem;
+    color: $dark-gray;
+    margin-bottom: 0.6rem;
+}
+
 .pub-links {
     margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap; /* allows wrapping on small screens */
+    gap: 0.75rem;
 }
 
 .pub-link {
@@ -54,7 +115,11 @@
 }
 
 .pub-link i {
-    margin-right: 0.4em;
+    margin-right: 0.2em;
+}
+
+.pub-link span {
+    margin-right: 0.2em;
 }
 
 .pub-link-online {
@@ -101,7 +166,7 @@
 .poster-item {
     border: 1px solid #ddd;
     padding: 15px;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     border-radius: 5px;
     text-align: center;
     display: flex;
