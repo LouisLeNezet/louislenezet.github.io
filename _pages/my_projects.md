@@ -102,10 +102,10 @@ technologies. Here are some of the personal projects I have made available publi
         I decided to design and build my own solution.
     </p>
     <p>
-        With a bit of plywood, some 3D impression are recycled toy motor and an
-        arduino UNO, this feeder can serve as many small / big portion as needed
-        for any cat. For larger croquettes the helicoïdal screw would need to be
-        printed bigger.
+        With a bit of plywood, a few 3D-printed parts, a recycled toy motor and an
+        Arduino UNO, this feeder can dispense as many small or large portions as needed
+        for any cat. For larger kibble, the helical screw should be
+        printed on a larger scale.
     </p>
     <p>
         The project includes both the hardware construction plans and the

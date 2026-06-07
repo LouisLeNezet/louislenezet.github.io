@@ -1,6 +1,10 @@
 ACGAO
+Aikido
+AikiGrade
 Anabella
 André
+arduino
+AutoCatFeeder
 BAM
 Bioconductor
 BioHackathon
@@ -38,6 +42,7 @@ img
 intra
 io
 jekyll
+json
 Judes
 llenezet
 louislenezet
@@ -66,7 +71,9 @@ SNP
 subworkflow
 subworkflows
 Tiret
+toc
 Trigila
+UNO
 VCF
 VISIO
 xlsx
