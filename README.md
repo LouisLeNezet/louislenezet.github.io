@@ -49,7 +49,7 @@ can be added in `.wordlist.txt`.
 This file can be sorted and cleaned with the following command:
 
 ```bash
-sort -u -o .wordlist.txt .wordlist.txt
+sort --ignore-case -o .wordlist.txt .wordlist.txt
 ```
 
 ## Update article and posters
