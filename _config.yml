@@ -39,6 +39,7 @@ tag_page_layout:      tag_page
 tag_permalink_style:  pretty
 
 exclude:
+  - vendor/
   - Gemfile
   - Gemfile.lock
   - node_modules

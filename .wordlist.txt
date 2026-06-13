@@ -26,14 +26,15 @@ Dysplasia
 Emmanuelle
 endfor
 familiaris
+FieldsRules
 generalisable
-Génin
 genomic
 genotype
 genotypes
 genotyping
 github
 GWAS
+Génin
 haplotype
 Hervé
 https
@@ -51,8 +52,8 @@ Minimac
 Monlong
 multifactorial
 Nextflow
-Nézet
 nf
+Nézet
 orcid
 Pascale
 PDFs
@@ -74,6 +75,7 @@ Tiret
 toc
 Trigila
 UNO
+ValuesMap
 VCF
 VISIO
 xlsx
