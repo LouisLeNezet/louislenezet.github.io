@@ -31,3 +31,14 @@
   language: 'python'
   licence: 'GPLv3'
   logo: 'assets/img/files2db/files2db_hexagonal_logo.png'
+- name: r-nfcore.utils
+  authors: Louis Le Nézet
+  version: 0.0.3
+  description: R package providing functions to link Nextflow parameters and R logic
+  github_url: 'https://github.com/nf-core/r-nf-core-utils'
+  documentation_url: ''
+  doi: ''
+  swhid: ''
+  language: 'r'
+  licence: 'MIT'
+  logo: 'assets/img/r-nfcore-utils/icon_nfcore_utils.png'
